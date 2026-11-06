@@ -1,10 +1,10 @@
-# RHPA – Rural Healthcare Profiling & Analytics
+# DHPA – District Healthcare Profiling & Analytics
 
 ---
 
 ## Overview
 
-**RHPA (Rural Healthcare Profiling & Analytics)** is a machine learning project aimed at analyzing and clustering districts across India based on key healthcare indicators.
+**DHPA (District Healthcare Profiling & Analytics)** is a machine learning project aimed at analyzing and clustering districts across India based on key healthcare indicators.
 
 India faces significant regional disparities in healthcare access, infrastructure, and outcomes. This project leverages **NFHS-5 data** to identify patterns and group similar districts, enabling policymakers and researchers to design targeted interventions.
 
@@ -44,7 +44,7 @@ Follow these steps to run the project locally:
 ### 1️. Clone the Repository
 
 ```bash
-git clone https://github.com/Syed-arsh-09/RHPA-health-atlas.git
+git clone https://github.com/Syed-arsh-09/DHPA-health-atlas.git
 cd rhpa-health-atlas
 ```
 
