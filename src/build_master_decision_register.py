@@ -728,6 +728,71 @@ REGISTER_ROWS.extend([
   'Strongly correlated with Column 89 (r≈0.906); retain for adolescent-specific analysis rather than adding overlapping information to the initial primary model.'],
 ])
 
+
+# Newly approved decisions (NFHS columns 91–102): Blood Glucose and Blood Pressure.
+REGISTER_ROWS.extend([
+ [91,
+  'Women  age 15 years and above with high (141-160 mg/dl) Blood sugar level23 (%)',
+  'Blood Glucose', 'Contextual only', 706, 706, 0, 0,
+  1.6, 5.65, 14.6, 5.8378, 1.8397,
+  'Severity-specific measure; retain for descriptive analysis. The broader overall indicator in Column 93 is the primary candidate.'],
+ [92,
+  'Women age 15 years and above wih very high (>160 mg/dl) Blood sugar level23 (%)',
+  'Blood Glucose', 'Contextual only', 706, 706, 0, 0,
+  0.7, 4.9, 18.0, 5.5919, 2.8215,
+  'Severity-specific measure; strongly correlated with Column 93 (r≈0.947), so retain for severity-focused interpretation.'],
+ [93,
+  'Women age 15 years and above wih high or very high (>140 mg/dl) Blood sugar level or taking medicine to control blood sugar level23 (%)',
+  'Blood Glucose', 'Keep', 706, 706, 0, 0,
+  4.1, 11.7, 32.1, 12.4616, 4.6226,
+  'Broad women’s blood-glucose indicator, including those taking medication; retain as the primary women’s measure.'],
+ [94,
+  'Men age 15 years and above wih high (141-160 mg/dl) Blood sugar level23 (%)',
+  'Blood Glucose', 'Contextual only', 706, 706, 0, 0,
+  1.7, 6.8, 18.3, 6.9980, 2.1114,
+  'Severity-specific measure; retain for descriptive analysis. The broader overall indicator in Column 96 is the primary candidate.'],
+ [95,
+  'Men (age 15 years and above wih  very high (>160 mg/dl) Blood sugar level23 (%)',
+  'Blood Glucose', 'Contextual only', 706, 706, 0, 0,
+  0.5, 6.3, 21.1, 6.6462, 3.1164,
+  'Severity-specific measure; strongly correlated with Column 96 (r≈0.927), so retain for severity-focused interpretation.'],
+ [96,
+  'Men age 15 years and above wih high or very high (>140 mg/dl) Blood sugar level  or taking medicine to control blood sugar level23 (%)',
+  'Blood Glucose', 'Keep', 706, 706, 0, 0,
+  4.8, 14.1, 36.2, 14.7222, 4.9480,
+  'Broad men’s blood-glucose indicator, including those taking medication; retain as the primary men’s measure.'],
+ [97,
+  'Women age 15 years and above wih Mildly elevated blood pressure (Systolic 140-159 mm of Hg and/or Diastolic 90-99 mm of Hg) (%)',
+  'Blood Pressure', 'Contextual only', 706, 706, 0, 0,
+  4.3, 12.6, 23.7, 12.6720, 3.1255,
+  'Severity-specific measure; overlaps with the broader elevated-blood-pressure indicator in Column 99.'],
+ [98,
+  'Women age 15 years and above wih Moderately or severely elevated blood pressure (Systolic ≥160 mm of Hg and/or Diastolic ≥100 mm of Hg) (%)',
+  'Blood Pressure', 'Contextual only', 706, 706, 0, 0,
+  0.7, 5.1, 15.8, 5.3494, 1.9518,
+  'Severity-specific measure; retain for descriptive analysis alongside the overall indicator in Column 99.'],
+ [99,
+  'Women age 15 years and above wih Elevated blood pressure (Systolic ≥140 mm of Hg and/or Diastolic ≥90 mm of Hg) or taking medicine to control blood pressure (%)',
+  'Blood Pressure', 'Keep', 706, 706, 0, 0,
+  8.5, 21.0, 42.1, 21.4068, 5.2168,
+  'Broad women’s elevated-blood-pressure indicator, including those taking medication; retain as the primary women’s measure.'],
+ [100,
+  'Men age 15 years and above wih Mildly elevated blood pressure (Systolic 140-159 mm of Hg and/or Diastolic 90-99 mm of Hg) (%)',
+  'Blood Pressure', 'Contextual only', 706, 706, 0, 0,
+  5.3, 16.3, 32.9, 16.2649, 4.3375,
+  'Severity-specific measure; strongly correlated with Column 102 (r≈0.938), so retain for descriptive analysis.'],
+ [101,
+  'Men age 15 years and above wih Moderately or severely elevated blood pressure (Systolic ≥160 mm of Hg and/or Diastolic ≥100 mm of Hg) (%)',
+  'Blood Pressure', 'Contextual only', 706, 706, 0, 0,
+  0.8, 5.8, 19.5, 6.0525, 2.5729,
+  'Severity-specific measure; retain for descriptive analysis alongside the overall indicator in Column 102.'],
+ [102,
+  'Men age 15 years and above wih Elevated blood pressure (Systolic ≥140 mm of Hg and/or Diastolic ≥90 mm of Hg) or taking medicine to control blood pressure (%)',
+  'Blood Pressure', 'Keep', 706, 706, 0, 0,
+  10.0, 24.4, 49.6, 24.7748, 6.7672,
+  'Broad men’s elevated-blood-pressure indicator, including those taking medication; retain as the primary men’s measure.'],
+])
+
 SUMMARY_ROWS = [['Maternal/Newborn (37–53)', 11, 3, 3, 17],
  ['Child Immunization (54–62)', 7, 1, 1, 9],
  ['Child Preventive Supplementation (63)', 1, 0, 0, 1],
@@ -737,7 +802,9 @@ SUMMARY_ROWS = [['Maternal/Newborn (37–53)', 11, 3, 3, 17],
  ['Child Nutritional Status (78–82)', 3, 0, 2, 5],
  ['Adult Nutritional Status (83–85)', 3, 0, 0, 3],
  ['Anemia (86–90)', 2, 0, 3, 5],
- ['All reviewed columns (37–90)', 31, 4, 19, 54]]
+ ['Blood Glucose (91–96)', 2, 0, 4, 6],
+ ['Blood Pressure (97–102)', 2, 0, 4, 6],
+ ['All reviewed columns (37–102)', 35, 4, 27, 66]]
 
 MODELLING_NOTES = [['Maternal/newborn',
   'Keep maternal-care, newborn postnatal care, delivery mode and financial burden conceptually distinct. Column 44 is a '
@@ -761,17 +828,21 @@ MODELLING_NOTES = [['Maternal/newborn',
   'Columns 83–85 (women aged 15–49) are all Keep: low BMI, overweight/obesity, and high-risk waist-to-hip ratio represent distinct nutritional dimensions. Preserve the women aged 15–49 population definition in interpretation.'],
  ['Anemia',
   'Keep Column 86 (children aged 6–59 months) and Column 89 (all women aged 15–49). Columns 87 and 89 are almost perfectly correlated (r≈0.999), so Column 87 is Contextual only. Column 90 is Contextual only because it strongly correlates with Column 89 (r≈0.906). Column 88 is Contextual only because 421 of 572 available estimates are parenthesized and 134 are missing/suppressed.'],
+ ['Blood glucose',
+  'Keep overall blood-glucose indicators for women (Column 93) and men (Column 96). Severity-specific Columns 91, 92, 94 and 95 are Contextual only. Columns 92 and 93 correlate at r≈0.947; Columns 95 and 96 correlate at r≈0.927. Women’s and men’s overall indicators correlate at r≈0.906 but represent distinct populations.'],
+ ['Blood pressure',
+  'Keep overall elevated-blood-pressure indicators for women (Column 99) and men (Column 102). Severity-specific Columns 97, 98, 100 and 101 are Contextual only. Correlations with the overall indicators are high (97 vs 99 r≈0.878; 98 vs 99 r≈0.824; 100 vs 102 r≈0.938; 101 vs 102 r≈0.895). Women’s and men’s overall indicators correlate at r≈0.863 but represent distinct populations.'],
  ['Reliability',
   'Parenthesized numeric estimates are lower-reliability estimates based on 25–49 unweighted cases. Suppressed values remain '
   'missing; do not convert to zero or automatically impute.'],
  ['Statistics',
-  'Maternal, child-illness, child nutritional-status, adult nutritional-status and anemia summary statistics in the master register are calculated from the uploaded cleaned district CSV. '
-  'Existing immunization statistics are carried forward from the previously reviewed register. Infant and young child feeding statistics (72–77) and child nutritional-status statistics (78–82) were recalculated from the uploaded cleaned district CSV and quality-flags file. Columns 83–90 were recalculated from the uploaded cleaned district CSV; parenthesized/missing counts were cross-checked against the quality-flags file.'],
+  'Maternal, child-illness, child nutritional-status, adult nutritional-status, anemia, blood-glucose and blood-pressure summary statistics in the master register are calculated from the uploaded cleaned district CSV. '
+  'Existing immunization statistics are carried forward from the previously reviewed register. Infant and young child feeding statistics (72–77) and child nutritional-status statistics (78–82) were recalculated from the uploaded cleaned district CSV and quality-flags file. Columns 83–90 were recalculated from the uploaded cleaned district CSV; parenthesized/missing counts were cross-checked against the quality-flags file. Columns 91–102 were recalculated from the uploaded cleaned district CSV; all 12 have 706 available values and no missing or parenthesized estimates in the quality-flags file.'],
  ['Future updates',
   'Continue adding approved decisions as new rows in this master workbook. Update Summary and Modelling Notes; do not create a '
   'separate workbook per category.']]
 
-# Approved decisions currently cover NFHS columns 37–90. Append future approved category decisions here, then update SUMMARY_ROWS
+# Approved decisions currently cover NFHS columns 37–102. Append future approved category decisions here, then update SUMMARY_ROWS
 # and MODELLING_NOTES. Do not add unapproved or unreviewed indicators.
 
 def style_sheet(ws, freeze_panes="A2"):
