@@ -684,6 +684,50 @@ REGISTER_ROWS = [[37,
   3.115097439493865,
   'Captures excess weight and the double burden of malnutrition; distinct from undernutrition indicators.']]
 
+# Newly approved decisions (NFHS columns 83–90): Adult Nutritional Status and Anemia.
+REGISTER_ROWS.extend([
+ [83,
+  'Women (age 15-49 years) whose Body Mass Index (BMI) is below normal (BMI <18.5 kg/m2)21 (%)',
+  'Adult Nutritional Status', 'Keep', 706, 706, 0, 0,
+  1.2, 18.0, 43.6, 17.89490084985836, 7.450437813120554,
+  'Captures undernutrition among women aged 15–49; complete district coverage and distinct from excess-weight indicators.'],
+ [84,
+  'Women (age 15-49 years) who are overweight or obese (BMI ≥25.0 kg/m2)21 (%)',
+  'Adult Nutritional Status', 'Keep', 706, 706, 0, 0,
+  3.8, 21.3, 53.0, 23.06954674220963, 10.610695477567443,
+  'Captures overweight/obesity among women aged 15–49; represents a distinct dimension of the double burden of malnutrition.'],
+ [85,
+  'Women (age 15-49 years) who have high risk waist-to-hip ratio (≥0.85) (%)',
+  'Adult Nutritional Status', 'Keep', 706, 706, 0, 0,
+  18.0, 58.15, 96.6, 57.46458923512748, 13.872911240433048,
+  'Captures central adiposity and provides information not fully represented by BMI; complete district coverage.'],
+ [86,
+  'Children age 6-59 months who are anaemic (<11.0 g/dl)22 (%)',
+  'Anemia', 'Keep', 706, 706, 0, 2,
+  24.9, 67.7, 95.5, 65.81373937677054, 12.082832128204139,
+  'Reliable child-anemia indicator with complete district coverage; represents a population distinct from women’s anemia measures.'],
+ [87,
+  'Non-pregnant women age 15-49 years who are anaemic (<12.0 g/dl)22 (%)',
+  'Anemia', 'Contextual only', 706, 706, 0, 0,
+  15.6, 57.5, 94.6, 56.162322946175635, 12.018706329314716,
+  'Almost perfectly correlated with Column 89 (r≈0.999); retain for subgroup interpretation rather than duplicate primary clustering input.'],
+ [88,
+  'Pregnant women age 15-49 years who are anaemic (<11.0 g/dl)22 (%)',
+  'Anemia', 'Contextual only', 706, 572, 134, 421,
+  2.0, 51.9, 87.6, 50.41031468531468, 14.657763592240757,
+  'Only 572 districts have estimates; 421 are parenthesized and 134 are missing/suppressed. Retain for maternal-health interpretation, not initial primary clustering.'],
+ [89,
+  'All women age 15-49 years who are anaemic22 (%)',
+  'Anemia', 'Keep', 706, 706, 0, 0,
+  14.9, 57.2, 93.5, 55.91728045325779, 11.94603166719287,
+  'Broad women’s anemia indicator with complete district coverage and reliable estimates; retain as the primary women’s anemia candidate.'],
+ [90,
+  'All women age 15-19 years who are anaemic22 (%) ',
+  'Anemia', 'Contextual only', 706, 706, 0, 3,
+  18.2, 59.75, 97.1, 58.124787535410775, 12.874800072434109,
+  'Strongly correlated with Column 89 (r≈0.906); retain for adolescent-specific analysis rather than adding overlapping information to the initial primary model.'],
+])
+
 SUMMARY_ROWS = [['Maternal/Newborn (37–53)', 11, 3, 3, 17],
  ['Child Immunization (54–62)', 7, 1, 1, 9],
  ['Child Preventive Supplementation (63)', 1, 0, 0, 1],
@@ -691,7 +735,9 @@ SUMMARY_ROWS = [['Maternal/Newborn (37–53)', 11, 3, 3, 17],
  ['Child Illness (66–71)', 2, 0, 4, 6],
  ['Infant and Young Child Feeding (72–77)', 2, 0, 4, 6],
  ['Child Nutritional Status (78–82)', 3, 0, 2, 5],
- ['All reviewed columns (37–82)', 26, 4, 16, 46]]
+ ['Adult Nutritional Status (83–85)', 3, 0, 0, 3],
+ ['Anemia (86–90)', 2, 0, 3, 5],
+ ['All reviewed columns (37–90)', 31, 4, 19, 54]]
 
 MODELLING_NOTES = [['Maternal/newborn',
   'Keep maternal-care, newborn postnatal care, delivery mode and financial burden conceptually distinct. Column 44 is a '
@@ -711,17 +757,21 @@ MODELLING_NOTES = [['Maternal/newborn',
   'Keep early breastfeeding (72), exclusive breastfeeding (73), complementary feeding (74), and dietary adequacy (75–77) conceptually distinct. Columns 73, 74 and 76 have substantial missingness and/or parenthesized estimates. Column 75 is highly correlated with Column 77 (r≈0.962); retain it for breastfeeding-subgroup interpretation, while Column 77 is the broader primary candidate.'],
  ['Child nutritional status',
   'Columns 78 (stunting), 79 (wasting) and 82 (overweight) are Keep candidates. Column 80 (severe wasting) is Contextual only because it is nested within wasting and correlates strongly with Column 79 (r≈0.844). Column 81 (underweight) is Contextual only because it overlaps with stunting and wasting. All five have 706 available estimates and one parenthesized estimate each.'],
+ ['Adult nutritional status',
+  'Columns 83–85 (women aged 15–49) are all Keep: low BMI, overweight/obesity, and high-risk waist-to-hip ratio represent distinct nutritional dimensions. Preserve the women aged 15–49 population definition in interpretation.'],
+ ['Anemia',
+  'Keep Column 86 (children aged 6–59 months) and Column 89 (all women aged 15–49). Columns 87 and 89 are almost perfectly correlated (r≈0.999), so Column 87 is Contextual only. Column 90 is Contextual only because it strongly correlates with Column 89 (r≈0.906). Column 88 is Contextual only because 421 of 572 available estimates are parenthesized and 134 are missing/suppressed.'],
  ['Reliability',
   'Parenthesized numeric estimates are lower-reliability estimates based on 25–49 unweighted cases. Suppressed values remain '
   'missing; do not convert to zero or automatically impute.'],
  ['Statistics',
-  'Maternal, child-illness and child nutritional-status summary statistics in the master register are calculated from the uploaded cleaned district CSV. '
-  'Existing immunization statistics are carried forward from the previously reviewed register. Infant and young child feeding statistics (72–77) and child nutritional-status statistics (78–82) were recalculated from the uploaded cleaned district CSV and quality-flags file.'],
+  'Maternal, child-illness, child nutritional-status, adult nutritional-status and anemia summary statistics in the master register are calculated from the uploaded cleaned district CSV. '
+  'Existing immunization statistics are carried forward from the previously reviewed register. Infant and young child feeding statistics (72–77) and child nutritional-status statistics (78–82) were recalculated from the uploaded cleaned district CSV and quality-flags file. Columns 83–90 were recalculated from the uploaded cleaned district CSV; parenthesized/missing counts were cross-checked against the quality-flags file.'],
  ['Future updates',
   'Continue adding approved decisions as new rows in this master workbook. Update Summary and Modelling Notes; do not create a '
   'separate workbook per category.']]
 
-# Approved decisions currently cover NFHS columns 37–82. Append future approved category decisions here, then update SUMMARY_ROWS
+# Approved decisions currently cover NFHS columns 37–90. Append future approved category decisions here, then update SUMMARY_ROWS
 # and MODELLING_NOTES. Do not add unapproved or unreviewed indicators.
 
 def style_sheet(ws, freeze_panes="A2"):
