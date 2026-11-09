@@ -80,6 +80,9 @@ KEEP_COLUMNS = [
 assert len(KEEP_COLUMNS) == 54, f"Expected 54 Keep columns, got {len(KEEP_COLUMNS)}"
 
 # Map column numbers to column names (0-indexed in df)
+assert max(KEEP_COLUMNS) <= len(col_names), (
+    f"KEEP_COLUMNS references column {max(KEEP_COLUMNS)} but CSV has {len(col_names)} columns"
+)
 keep_col_names = [col_names[c - 1] for c in KEEP_COLUMNS]
 
 print(f"\n54 Keep indicators identified. Column numbers: {KEEP_COLUMNS}")
@@ -315,4 +318,4 @@ with pd.ExcelWriter(output_file, engine="openpyxl") as writer:
     df_flags.to_excel(writer, sheet_name="Quality_Flags", index=False)
 
 print(f"\n✅ Report saved to: {output_file}")
-print(f"   Sheets: Correlation_Matrix, Pairwise_N, All_Pairs, High_Correlation_Pairs, Distribution_Stats, Quality_Flags")
+print("   Sheets: Correlation_Matrix, Pairwise_N, All_Pairs, High_Correlation_Pairs, Distribution_Stats, Quality_Flags")
