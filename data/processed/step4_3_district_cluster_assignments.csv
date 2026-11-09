@@ -1,0 +1,707 @@
+District Names,State/UT,Cluster_ID,Cluster_Name,Distance_to_Centroid,Silhouette_Score
+Nicobars,Andaman & Nicobar Islands,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,9.3417,0.0451
+North & Middle Andaman,Andaman & Nicobar Islands,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,8.0042,0.0357
+South Andaman,Andaman & Nicobar Islands,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.9439,0.1659
+Srikakulam,Andhra Pradesh,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,4.9853,0.0643
+Vizianagaram,Andhra Pradesh,2,Cluster 2: Intermediate / Progressing Health Profile,5.6409,0.0085
+Visakhapatnam,Andhra Pradesh,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,4.5709,0.0818
+East Godavari,Andhra Pradesh,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.7365,0.2106
+West Godavari,Andhra Pradesh,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.4119,0.2232
+Krishna,Andhra Pradesh,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,4.8257,0.241
+Guntur,Andhra Pradesh,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,6.128,0.2065
+Prakasam,Andhra Pradesh,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,6.8554,0.1965
+Sri Potti Sriramulu Nello,Andhra Pradesh,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.9415,0.1608
+Y.S.R.,Andhra Pradesh,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.3788,0.1835
+Kurnool,Andhra Pradesh,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,6.1727,0.0713
+Anantapur,Andhra Pradesh,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.5395,0.057
+Chittoor,Andhra Pradesh,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.3992,0.134
+Tawang,Arunachal Pradesh,4,Cluster 4: Distinct Hill & Northeastern Health Geography,9.5549,-0.0127
+West Kameng,Arunachal Pradesh,4,Cluster 4: Distinct Hill & Northeastern Health Geography,7.4817,0.1545
+East Kameng,Arunachal Pradesh,4,Cluster 4: Distinct Hill & Northeastern Health Geography,4.7374,0.1898
+Papum Pare,Arunachal Pradesh,4,Cluster 4: Distinct Hill & Northeastern Health Geography,5.6014,0.1988
+Upper Subansiri,Arunachal Pradesh,4,Cluster 4: Distinct Hill & Northeastern Health Geography,5.4008,0.1875
+Upper Siang,Arunachal Pradesh,4,Cluster 4: Distinct Hill & Northeastern Health Geography,5.2519,0.2414
+Changlang,Arunachal Pradesh,4,Cluster 4: Distinct Hill & Northeastern Health Geography,5.5141,0.0325
+Lower Subansiri,Arunachal Pradesh,4,Cluster 4: Distinct Hill & Northeastern Health Geography,5.9041,0.1269
+Dibang Valley,Arunachal Pradesh,4,Cluster 4: Distinct Hill & Northeastern Health Geography,7.8131,0.0093
+Lower Dibang Valley,Arunachal Pradesh,4,Cluster 4: Distinct Hill & Northeastern Health Geography,5.8463,0.1097
+Anjaw,Arunachal Pradesh,4,Cluster 4: Distinct Hill & Northeastern Health Geography,6.865,0.1437
+East Siang,Arunachal Pradesh,4,Cluster 4: Distinct Hill & Northeastern Health Geography,5.0929,0.2418
+Kra Daadi,Arunachal Pradesh,4,Cluster 4: Distinct Hill & Northeastern Health Geography,9.2009,0.1469
+Kurung Kumey,Arunachal Pradesh,4,Cluster 4: Distinct Hill & Northeastern Health Geography,5.4938,0.1305
+Lohit,Arunachal Pradesh,4,Cluster 4: Distinct Hill & Northeastern Health Geography,4.765,0.1391
+Longding,Arunachal Pradesh,4,Cluster 4: Distinct Hill & Northeastern Health Geography,5.3104,0.2152
+Namsai,Arunachal Pradesh,4,Cluster 4: Distinct Hill & Northeastern Health Geography,5.197,0.1157
+Siang,Arunachal Pradesh,4,Cluster 4: Distinct Hill & Northeastern Health Geography,5.8854,0.2375
+Tirap,Arunachal Pradesh,4,Cluster 4: Distinct Hill & Northeastern Health Geography,4.1703,0.2451
+West Siang,Arunachal Pradesh,4,Cluster 4: Distinct Hill & Northeastern Health Geography,6.0382,0.2303
+Kokrajhar,Assam,3,Cluster 3: High Foundational Healthcare Vulnerability,5.7584,0.0272
+Goalpara,Assam,2,Cluster 2: Intermediate / Progressing Health Profile,5.2169,0.0061
+Barpeta,Assam,3,Cluster 3: High Foundational Healthcare Vulnerability,5.4309,0.0701
+Morigaon,Assam,2,Cluster 2: Intermediate / Progressing Health Profile,5.5592,-0.0075
+Lakhimpur,Assam,2,Cluster 2: Intermediate / Progressing Health Profile,5.6582,0.0745
+Dhemaji,Assam,2,Cluster 2: Intermediate / Progressing Health Profile,5.9004,0.1
+Tinsukia,Assam,2,Cluster 2: Intermediate / Progressing Health Profile,4.9489,0.0592
+Dibrugarh,Assam,2,Cluster 2: Intermediate / Progressing Health Profile,4.9751,0.1271
+Golaghat,Assam,2,Cluster 2: Intermediate / Progressing Health Profile,4.7639,0.0881
+Dima Hasao,Assam,2,Cluster 2: Intermediate / Progressing Health Profile,6.691,0.0642
+Cachar,Assam,3,Cluster 3: High Foundational Healthcare Vulnerability,5.6686,0.1062
+Karimganj,Assam,3,Cluster 3: High Foundational Healthcare Vulnerability,7.0581,0.0177
+Hailakandi,Assam,2,Cluster 2: Intermediate / Progressing Health Profile,6.2662,-0.0135
+Bongaigaon,Assam,3,Cluster 3: High Foundational Healthcare Vulnerability,5.2716,0.108
+Chirang,Assam,2,Cluster 2: Intermediate / Progressing Health Profile,4.7416,-0.0055
+Kamrup,Assam,3,Cluster 3: High Foundational Healthcare Vulnerability,6.265,0.0768
+Kamrup Metropolitan,Assam,2,Cluster 2: Intermediate / Progressing Health Profile,6.7212,0.0211
+Nalbari,Assam,3,Cluster 3: High Foundational Healthcare Vulnerability,5.4859,0.041
+Baksa,Assam,2,Cluster 2: Intermediate / Progressing Health Profile,5.6759,0.0271
+Darrang,Assam,3,Cluster 3: High Foundational Healthcare Vulnerability,5.85,0.1331
+Udalguri,Assam,3,Cluster 3: High Foundational Healthcare Vulnerability,6.7231,0.0698
+Biswanath,Assam,2,Cluster 2: Intermediate / Progressing Health Profile,6.1974,0.0269
+Charaideo,Assam,2,Cluster 2: Intermediate / Progressing Health Profile,4.9973,0.0628
+Dhubri,Assam,3,Cluster 3: High Foundational Healthcare Vulnerability,6.2082,0.1347
+Hojai,Assam,3,Cluster 3: High Foundational Healthcare Vulnerability,5.6557,0.0935
+Jorhat,Assam,2,Cluster 2: Intermediate / Progressing Health Profile,5.6806,0.069
+Karbi Anglong,Assam,4,Cluster 4: Distinct Hill & Northeastern Health Geography,5.1721,0.0462
+Majuli,Assam,2,Cluster 2: Intermediate / Progressing Health Profile,5.3535,0.0667
+Nagaon,Assam,3,Cluster 3: High Foundational Healthcare Vulnerability,5.6536,0.0869
+Sivasagar,Assam,2,Cluster 2: Intermediate / Progressing Health Profile,5.5377,0.1041
+Sonitpur,Assam,2,Cluster 2: Intermediate / Progressing Health Profile,5.3571,0.0135
+South Salmara Mancachar,Assam,3,Cluster 3: High Foundational Healthcare Vulnerability,6.3003,0.0848
+West Karbi Anglong,Assam,4,Cluster 4: Distinct Hill & Northeastern Health Geography,6.5865,-0.0276
+Pashchim Champaran,Bihar,3,Cluster 3: High Foundational Healthcare Vulnerability,5.8201,0.2397
+Purba Champaran,Bihar,3,Cluster 3: High Foundational Healthcare Vulnerability,5.7509,0.2682
+Sheohar,Bihar,3,Cluster 3: High Foundational Healthcare Vulnerability,4.7508,0.2079
+Sitamarhi,Bihar,3,Cluster 3: High Foundational Healthcare Vulnerability,6.9112,0.2348
+Madhubani,Bihar,3,Cluster 3: High Foundational Healthcare Vulnerability,6.8488,0.2008
+Supaul,Bihar,3,Cluster 3: High Foundational Healthcare Vulnerability,9.3102,0.1548
+Araria,Bihar,3,Cluster 3: High Foundational Healthcare Vulnerability,6.698,0.2747
+Kishanganj,Bihar,3,Cluster 3: High Foundational Healthcare Vulnerability,6.6654,0.2377
+Purnia,Bihar,3,Cluster 3: High Foundational Healthcare Vulnerability,7.37,0.2675
+Katihar,Bihar,3,Cluster 3: High Foundational Healthcare Vulnerability,6.3386,0.2605
+Madhepura,Bihar,3,Cluster 3: High Foundational Healthcare Vulnerability,6.1374,0.2347
+Saharsa,Bihar,3,Cluster 3: High Foundational Healthcare Vulnerability,6.6644,0.251
+Darbhanga,Bihar,3,Cluster 3: High Foundational Healthcare Vulnerability,4.3121,0.2816
+Muzaffarpur,Bihar,3,Cluster 3: High Foundational Healthcare Vulnerability,4.0706,0.2463
+Gopalganj,Bihar,3,Cluster 3: High Foundational Healthcare Vulnerability,4.3378,0.2218
+Siwan,Bihar,3,Cluster 3: High Foundational Healthcare Vulnerability,5.5776,0.1859
+Saran,Bihar,3,Cluster 3: High Foundational Healthcare Vulnerability,4.7196,0.266
+Vaishali,Bihar,3,Cluster 3: High Foundational Healthcare Vulnerability,4.5072,0.2756
+Samastipur,Bihar,3,Cluster 3: High Foundational Healthcare Vulnerability,4.3485,0.2634
+Begusarai,Bihar,3,Cluster 3: High Foundational Healthcare Vulnerability,4.2352,0.2572
+Khagaria,Bihar,3,Cluster 3: High Foundational Healthcare Vulnerability,5.5554,0.2652
+Bhagalpur,Bihar,3,Cluster 3: High Foundational Healthcare Vulnerability,5.4107,0.2223
+Banka,Bihar,3,Cluster 3: High Foundational Healthcare Vulnerability,6.0743,0.1586
+Munger,Bihar,3,Cluster 3: High Foundational Healthcare Vulnerability,5.7064,0.1588
+Lakhisarai,Bihar,3,Cluster 3: High Foundational Healthcare Vulnerability,5.5206,0.2138
+Sheikhpura,Bihar,3,Cluster 3: High Foundational Healthcare Vulnerability,5.5365,0.1743
+Nalanda,Bihar,3,Cluster 3: High Foundational Healthcare Vulnerability,4.9384,0.2106
+Patna,Bihar,3,Cluster 3: High Foundational Healthcare Vulnerability,4.919,0.2352
+Bhojpur,Bihar,3,Cluster 3: High Foundational Healthcare Vulnerability,4.6742,0.2485
+Buxar,Bihar,3,Cluster 3: High Foundational Healthcare Vulnerability,4.6791,0.1932
+Kaimur (Bhabua),Bihar,3,Cluster 3: High Foundational Healthcare Vulnerability,5.6856,0.0374
+Rohtas,Bihar,3,Cluster 3: High Foundational Healthcare Vulnerability,5.4063,0.075
+Aurangabad,Bihar,3,Cluster 3: High Foundational Healthcare Vulnerability,4.5811,0.1405
+Gaya,Bihar,3,Cluster 3: High Foundational Healthcare Vulnerability,4.8934,0.1586
+Nawada,Bihar,3,Cluster 3: High Foundational Healthcare Vulnerability,5.2114,0.1804
+Jamui,Bihar,3,Cluster 3: High Foundational Healthcare Vulnerability,6.4864,0.1759
+Jehanabad,Bihar,3,Cluster 3: High Foundational Healthcare Vulnerability,5.0191,0.1869
+Arwal,Bihar,3,Cluster 3: High Foundational Healthcare Vulnerability,5.2243,0.1879
+Chandigarh,Chandigarh,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,7.3631,0.1101
+Koriya,Chhattisgarh,2,Cluster 2: Intermediate / Progressing Health Profile,5.1568,0.0977
+Jashpur,Chhattisgarh,2,Cluster 2: Intermediate / Progressing Health Profile,6.3316,0.0914
+Raigarh,Chhattisgarh,2,Cluster 2: Intermediate / Progressing Health Profile,5.3565,0.1373
+Korba,Chhattisgarh,3,Cluster 3: High Foundational Healthcare Vulnerability,6.117,0.0472
+Janjgir - Champa,Chhattisgarh,2,Cluster 2: Intermediate / Progressing Health Profile,4.119,0.1439
+Kabeerdham,Chhattisgarh,2,Cluster 2: Intermediate / Progressing Health Profile,5.1708,0.1793
+Rajnandgaon,Chhattisgarh,2,Cluster 2: Intermediate / Progressing Health Profile,5.4259,0.1986
+Mahasamund,Chhattisgarh,2,Cluster 2: Intermediate / Progressing Health Profile,4.0258,0.1533
+Dhamtari,Chhattisgarh,2,Cluster 2: Intermediate / Progressing Health Profile,5.1696,0.1381
+Uttar Bastar Kanker,Chhattisgarh,2,Cluster 2: Intermediate / Progressing Health Profile,5.3427,0.1649
+Narayanpur,Chhattisgarh,2,Cluster 2: Intermediate / Progressing Health Profile,6.5585,0.051
+Bijapur,Chhattisgarh,3,Cluster 3: High Foundational Healthcare Vulnerability,8.4217,0.0613
+Balod,Chhattisgarh,2,Cluster 2: Intermediate / Progressing Health Profile,5.4307,0.1326
+Baloda Bazar,Chhattisgarh,2,Cluster 2: Intermediate / Progressing Health Profile,4.5488,0.0405
+Balrampur,Chhattisgarh,2,Cluster 2: Intermediate / Progressing Health Profile,6.685,0.0197
+Bastar,Chhattisgarh,3,Cluster 3: High Foundational Healthcare Vulnerability,6.6176,0.1099
+Bemetara,Chhattisgarh,2,Cluster 2: Intermediate / Progressing Health Profile,4.6696,0.174
+Bilaspur,Chhattisgarh,3,Cluster 3: High Foundational Healthcare Vulnerability,5.228,0.0554
+Dantewada,Chhattisgarh,2,Cluster 2: Intermediate / Progressing Health Profile,6.9264,0.0743
+Durg,Chhattisgarh,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.1557,0.0083
+Gariyaband,Chhattisgarh,2,Cluster 2: Intermediate / Progressing Health Profile,5.5602,0.1365
+Kodagaon,Chhattisgarh,2,Cluster 2: Intermediate / Progressing Health Profile,5.7236,0.0575
+Mungeli,Chhattisgarh,2,Cluster 2: Intermediate / Progressing Health Profile,5.173,0.073
+Raipur,Chhattisgarh,2,Cluster 2: Intermediate / Progressing Health Profile,4.0275,0.1768
+Sukma,Chhattisgarh,2,Cluster 2: Intermediate / Progressing Health Profile,8.4039,0.015
+Surajpur,Chhattisgarh,2,Cluster 2: Intermediate / Progressing Health Profile,6.5073,0.0277
+Surguja,Chhattisgarh,2,Cluster 2: Intermediate / Progressing Health Profile,5.4656,0.1152
+Diu,Dadra and Nagar Haveli & Daman and Diu,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,6.1453,0.0597
+Daman,Dadra and Nagar Haveli & Daman and Diu,2,Cluster 2: Intermediate / Progressing Health Profile,6.455,-0.0159
+Dadra & Nagar Haveli,Dadra and Nagar Haveli & Daman and Diu,2,Cluster 2: Intermediate / Progressing Health Profile,5.8296,0.1387
+North Goa,Goa,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.1204,0.2509
+South Goa,Goa,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.2208,0.2114
+Kachchh,Gujarat,2,Cluster 2: Intermediate / Progressing Health Profile,5.5112,0.1015
+Banas Kantha,Gujarat,3,Cluster 3: High Foundational Healthcare Vulnerability,6.894,0.1419
+Patan,Gujarat,2,Cluster 2: Intermediate / Progressing Health Profile,7.7128,0.0344
+Mahesana,Gujarat,3,Cluster 3: High Foundational Healthcare Vulnerability,7.2976,0.0853
+Gandhinagar,Gujarat,3,Cluster 3: High Foundational Healthcare Vulnerability,6.5112,0.0504
+Porbandar,Gujarat,2,Cluster 2: Intermediate / Progressing Health Profile,6.7649,0.0657
+Amreli,Gujarat,2,Cluster 2: Intermediate / Progressing Health Profile,6.1666,0.058
+Anand,Gujarat,2,Cluster 2: Intermediate / Progressing Health Profile,5.9452,0.0134
+Dohad,Gujarat,3,Cluster 3: High Foundational Healthcare Vulnerability,6.8574,0.0233
+Narmada,Gujarat,2,Cluster 2: Intermediate / Progressing Health Profile,5.9005,0.0866
+Bharuch,Gujarat,3,Cluster 3: High Foundational Healthcare Vulnerability,5.5534,0.0753
+The Dangs,Gujarat,2,Cluster 2: Intermediate / Progressing Health Profile,6.8216,0.1036
+Navsari,Gujarat,2,Cluster 2: Intermediate / Progressing Health Profile,6.9389,0.0459
+Valsad,Gujarat,2,Cluster 2: Intermediate / Progressing Health Profile,6.3853,0.0484
+Surat,Gujarat,2,Cluster 2: Intermediate / Progressing Health Profile,5.7593,0.0089
+Tapi,Gujarat,2,Cluster 2: Intermediate / Progressing Health Profile,6.2976,0.1438
+Ahmadabad,Gujarat,2,Cluster 2: Intermediate / Progressing Health Profile,6.5514,0.0441
+Aravali,Gujarat,3,Cluster 3: High Foundational Healthcare Vulnerability,5.8256,0.0859
+Bhavnagar,Gujarat,3,Cluster 3: High Foundational Healthcare Vulnerability,5.997,0.0273
+Botad,Gujarat,2,Cluster 2: Intermediate / Progressing Health Profile,6.4816,-0.0087
+Chhota Udaipur,Gujarat,2,Cluster 2: Intermediate / Progressing Health Profile,7.18,0.0447
+Devbhumi Dwarka,Gujarat,2,Cluster 2: Intermediate / Progressing Health Profile,5.4218,0.0378
+Gir Somnath,Gujarat,2,Cluster 2: Intermediate / Progressing Health Profile,6.1563,0.005
+Jamnagar,Gujarat,2,Cluster 2: Intermediate / Progressing Health Profile,6.3695,0.0654
+Junagadh,Gujarat,2,Cluster 2: Intermediate / Progressing Health Profile,5.3213,0.0622
+Kheda,Gujarat,3,Cluster 3: High Foundational Healthcare Vulnerability,6.0816,0.1062
+Mahisagar,Gujarat,3,Cluster 3: High Foundational Healthcare Vulnerability,6.658,0.0277
+Morbi,Gujarat,2,Cluster 2: Intermediate / Progressing Health Profile,6.1626,0.0803
+Panch Mahals,Gujarat,2,Cluster 2: Intermediate / Progressing Health Profile,6.6901,0.0147
+Rajkot,Gujarat,2,Cluster 2: Intermediate / Progressing Health Profile,6.3741,0.063
+Sabar Kantha,Gujarat,2,Cluster 2: Intermediate / Progressing Health Profile,5.247,0.0494
+Surendranagar,Gujarat,3,Cluster 3: High Foundational Healthcare Vulnerability,5.6596,0.0193
+Vadodara,Gujarat,2,Cluster 2: Intermediate / Progressing Health Profile,5.6393,0.0453
+Panchkula,Haryana,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,4.5129,0.1983
+Ambala,Haryana,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,4.3942,0.2101
+Yamunanagar,Haryana,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,4.2668,0.1949
+Kurukshetra,Haryana,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.1729,0.1749
+Kaithal,Haryana,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.4784,0.0175
+Karnal,Haryana,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.6636,0.0481
+Panipat,Haryana,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.1102,0.0936
+Sonipat,Haryana,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,4.772,0.0833
+Jind,Haryana,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.4208,0.0468
+Fatehabad,Haryana,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.5353,0.0154
+Sirsa,Haryana,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.6402,0.0269
+Hisar,Haryana,2,Cluster 2: Intermediate / Progressing Health Profile,5.4337,0.0221
+Rohtak,Haryana,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,4.2452,0.0919
+Jhajjar,Haryana,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.2284,0.099
+Mahendragarh,Haryana,2,Cluster 2: Intermediate / Progressing Health Profile,5.0352,0.0313
+Rewari,Haryana,2,Cluster 2: Intermediate / Progressing Health Profile,5.446,0.0355
+Gurgaon,Haryana,2,Cluster 2: Intermediate / Progressing Health Profile,5.939,0.0084
+Mewat,Haryana,3,Cluster 3: High Foundational Healthcare Vulnerability,5.7702,0.173
+Faridabad,Haryana,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.3212,0.0962
+Palwal,Haryana,2,Cluster 2: Intermediate / Progressing Health Profile,5.3514,0.0013
+Bhiwani,Haryana,2,Cluster 2: Intermediate / Progressing Health Profile,5.6498,0.014
+Charkhi Dadri,Haryana,2,Cluster 2: Intermediate / Progressing Health Profile,5.3932,0.0575
+Chamba,Himachal Pradesh,2,Cluster 2: Intermediate / Progressing Health Profile,6.2371,0.0825
+Kangra,Himachal Pradesh,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.7641,0.0436
+Lahul & Spiti,Himachal Pradesh,2,Cluster 2: Intermediate / Progressing Health Profile,6.1475,0.0664
+Kullu,Himachal Pradesh,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,6.2231,0.0196
+Mandi,Himachal Pradesh,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.4256,0.0593
+Hamirpur,Himachal Pradesh,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.3536,0.1784
+Una,Himachal Pradesh,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.2041,0.1807
+Bilaspur,Himachal Pradesh,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.6854,0.033
+Solan,Himachal Pradesh,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,4.8122,0.1013
+Sirmaur,Himachal Pradesh,2,Cluster 2: Intermediate / Progressing Health Profile,5.3127,0.0699
+Shimla,Himachal Pradesh,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.2991,0.1171
+Kinnaur,Himachal Pradesh,2,Cluster 2: Intermediate / Progressing Health Profile,5.8282,0.0403
+Kupwara,Jammu & Kashmir,2,Cluster 2: Intermediate / Progressing Health Profile,7.9212,0.0948
+Badgam,Jammu & Kashmir,2,Cluster 2: Intermediate / Progressing Health Profile,7.3609,0.0937
+Punch,Jammu & Kashmir,2,Cluster 2: Intermediate / Progressing Health Profile,6.3429,0.1083
+Rajouri,Jammu & Kashmir,2,Cluster 2: Intermediate / Progressing Health Profile,6.5323,0.0603
+Kathua,Jammu & Kashmir,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,8.1182,0.0493
+Baramula,Jammu & Kashmir,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,7.7662,0.0106
+Bandipore,Jammu & Kashmir,2,Cluster 2: Intermediate / Progressing Health Profile,7.3174,0.0574
+Srinagar,Jammu & Kashmir,2,Cluster 2: Intermediate / Progressing Health Profile,7.7626,0.0285
+Ganderbal,Jammu & Kashmir,2,Cluster 2: Intermediate / Progressing Health Profile,7.9005,0.0634
+Pulwama,Jammu & Kashmir,2,Cluster 2: Intermediate / Progressing Health Profile,8.2203,0.026
+Shupiyan,Jammu & Kashmir,2,Cluster 2: Intermediate / Progressing Health Profile,7.5814,0.0965
+Anantnag,Jammu & Kashmir,2,Cluster 2: Intermediate / Progressing Health Profile,6.9594,0.0775
+Kulgam,Jammu & Kashmir,2,Cluster 2: Intermediate / Progressing Health Profile,9.1839,0.0433
+Doda,Jammu & Kashmir,4,Cluster 4: Distinct Hill & Northeastern Health Geography,7.864,-0.0218
+Ramban,Jammu & Kashmir,2,Cluster 2: Intermediate / Progressing Health Profile,6.5892,0.0136
+Kishtwar,Jammu & Kashmir,2,Cluster 2: Intermediate / Progressing Health Profile,8.7592,0.0453
+Udhampur,Jammu & Kashmir,2,Cluster 2: Intermediate / Progressing Health Profile,5.7948,0.1004
+Reasi,Jammu & Kashmir,2,Cluster 2: Intermediate / Progressing Health Profile,8.0101,0.0468
+Jammu,Jammu & Kashmir,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,7.0428,0.0341
+Samba,Jammu & Kashmir,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,6.6283,0.0293
+Garhwa,Jharkhand,3,Cluster 3: High Foundational Healthcare Vulnerability,4.4015,0.1589
+Chatra,Jharkhand,3,Cluster 3: High Foundational Healthcare Vulnerability,5.1519,0.1358
+Kodarma,Jharkhand,3,Cluster 3: High Foundational Healthcare Vulnerability,5.1305,0.0796
+Giridih,Jharkhand,3,Cluster 3: High Foundational Healthcare Vulnerability,4.4826,0.1982
+Deoghar,Jharkhand,3,Cluster 3: High Foundational Healthcare Vulnerability,5.7119,0.2248
+Godda,Jharkhand,3,Cluster 3: High Foundational Healthcare Vulnerability,4.8177,0.1732
+Sahibganj,Jharkhand,3,Cluster 3: High Foundational Healthcare Vulnerability,5.6195,0.189
+Pakur,Jharkhand,3,Cluster 3: High Foundational Healthcare Vulnerability,6.3261,0.1603
+Dhanbad,Jharkhand,3,Cluster 3: High Foundational Healthcare Vulnerability,4.6196,0.0932
+Bokaro,Jharkhand,3,Cluster 3: High Foundational Healthcare Vulnerability,5.0004,0.0621
+Lohardaga,Jharkhand,2,Cluster 2: Intermediate / Progressing Health Profile,5.2556,0.0387
+Purbi Singhbhum,Jharkhand,2,Cluster 2: Intermediate / Progressing Health Profile,4.9991,0.0858
+Palamu,Jharkhand,3,Cluster 3: High Foundational Healthcare Vulnerability,4.7102,0.1129
+Latehar,Jharkhand,3,Cluster 3: High Foundational Healthcare Vulnerability,6.2846,0.0376
+Hazaribagh,Jharkhand,3,Cluster 3: High Foundational Healthcare Vulnerability,4.8498,0.1151
+Ramgarh,Jharkhand,3,Cluster 3: High Foundational Healthcare Vulnerability,5.2208,0.0295
+Dumka,Jharkhand,3,Cluster 3: High Foundational Healthcare Vulnerability,5.7768,0.149
+Jamtara,Jharkhand,3,Cluster 3: High Foundational Healthcare Vulnerability,5.7947,0.0984
+Ranchi,Jharkhand,2,Cluster 2: Intermediate / Progressing Health Profile,4.9245,0.0496
+Khunti,Jharkhand,3,Cluster 3: High Foundational Healthcare Vulnerability,6.4311,0.0608
+Gumla,Jharkhand,2,Cluster 2: Intermediate / Progressing Health Profile,5.7194,0.0516
+Simdega,Jharkhand,2,Cluster 2: Intermediate / Progressing Health Profile,7.1694,-0.0051
+Pashchimi Singhbhum,Jharkhand,3,Cluster 3: High Foundational Healthcare Vulnerability,7.4097,0.1
+Saraikela-Kharsawan,Jharkhand,2,Cluster 2: Intermediate / Progressing Health Profile,5.8449,0.0822
+Belgaum,Karnataka,2,Cluster 2: Intermediate / Progressing Health Profile,4.5035,0.068
+Bagalkot,Karnataka,2,Cluster 2: Intermediate / Progressing Health Profile,5.0129,-0.0018
+Bijapur,Karnataka,3,Cluster 3: High Foundational Healthcare Vulnerability,4.682,0.0805
+Bidar,Karnataka,2,Cluster 2: Intermediate / Progressing Health Profile,4.4165,0.0299
+Raichur,Karnataka,3,Cluster 3: High Foundational Healthcare Vulnerability,4.8159,0.0442
+Koppal,Karnataka,3,Cluster 3: High Foundational Healthcare Vulnerability,5.25,0.0609
+Gadag,Karnataka,2,Cluster 2: Intermediate / Progressing Health Profile,4.8129,-0.0156
+Dharwad,Karnataka,2,Cluster 2: Intermediate / Progressing Health Profile,5.1334,0.0296
+Uttara Kannada,Karnataka,2,Cluster 2: Intermediate / Progressing Health Profile,5.4226,0.0519
+Haveri,Karnataka,2,Cluster 2: Intermediate / Progressing Health Profile,4.936,0.084
+Bellary,Karnataka,2,Cluster 2: Intermediate / Progressing Health Profile,4.9647,0.0406
+Chitradurga,Karnataka,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,6.3583,0.0484
+Davanagere,Karnataka,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,4.71,0.0917
+Shimoga,Karnataka,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.0435,0.0643
+Udupi,Karnataka,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.3452,0.1112
+Chikmagalur,Karnataka,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.3721,0.058
+Tumkur,Karnataka,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.8247,0.0791
+Bangalore,Karnataka,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.2581,0.2015
+Mandya,Karnataka,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.5824,0.1176
+Hassan,Karnataka,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,6.147,0.07
+Dakshina Kannada,Karnataka,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.4113,0.1276
+Kodagu,Karnataka,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,4.8878,0.1446
+Mysore,Karnataka,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,4.4705,0.1428
+Chamarajanagar,Karnataka,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.8224,0.0649
+Gulbarga,Karnataka,3,Cluster 3: High Foundational Healthcare Vulnerability,4.7214,0.0998
+Yadgir,Karnataka,3,Cluster 3: High Foundational Healthcare Vulnerability,5.8776,0.0673
+Kolar,Karnataka,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,4.8379,0.112
+Chikkaballapura,Karnataka,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.4946,0.0543
+Bangalore Rural,Karnataka,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,4.7449,0.1303
+Ramanagara,Karnataka,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,4.5241,0.1845
+Kasaragod,Kerala,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,7.0757,0.2192
+Kannur,Kerala,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,7.1297,0.2514
+Wayanad,Kerala,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,6.0166,0.187
+Kozhikode,Kerala,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,7.0025,0.2531
+Malappuram,Kerala,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,6.757,0.2125
+Palakkad,Kerala,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,6.473,0.2361
+Thrissur,Kerala,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,7.088,0.2725
+Ernakulam,Kerala,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,6.7421,0.2758
+Idukki,Kerala,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,7.2119,0.2258
+Kottayam,Kerala,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,7.344,0.2278
+Alappuzha,Kerala,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,6.4708,0.2763
+Pathanamthitta,Kerala,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,9.4452,0.2391
+Kollam,Kerala,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,7.2404,0.2685
+Thiruvananthapuram,Kerala,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,8.835,0.2188
+Leh(Ladakh),Ladakh,2,Cluster 2: Intermediate / Progressing Health Profile,9.099,0.0881
+Kargil,Ladakh,2,Cluster 2: Intermediate / Progressing Health Profile,7.9094,0.0915
+Lakshadweep,Lakshadweep,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,7.6893,0.1439
+Sheopur,Madhya Pradesh,3,Cluster 3: High Foundational Healthcare Vulnerability,5.2481,0.0639
+Morena,Madhya Pradesh,2,Cluster 2: Intermediate / Progressing Health Profile,5.0676,0.0479
+Bhind,Madhya Pradesh,2,Cluster 2: Intermediate / Progressing Health Profile,4.895,0.0415
+Gwalior,Madhya Pradesh,2,Cluster 2: Intermediate / Progressing Health Profile,4.7398,0.0728
+Datia,Madhya Pradesh,2,Cluster 2: Intermediate / Progressing Health Profile,4.3461,0.0372
+Shivpuri,Madhya Pradesh,2,Cluster 2: Intermediate / Progressing Health Profile,5.6419,0.0005
+Tikamgarh,Madhya Pradesh,2,Cluster 2: Intermediate / Progressing Health Profile,5.7517,0.1191
+Chhatarpur,Madhya Pradesh,3,Cluster 3: High Foundational Healthcare Vulnerability,5.0876,0.1553
+Panna,Madhya Pradesh,3,Cluster 3: High Foundational Healthcare Vulnerability,4.3259,0.1576
+Sagar,Madhya Pradesh,3,Cluster 3: High Foundational Healthcare Vulnerability,5.5349,0.1126
+Damoh,Madhya Pradesh,3,Cluster 3: High Foundational Healthcare Vulnerability,5.1757,0.0628
+Satna,Madhya Pradesh,3,Cluster 3: High Foundational Healthcare Vulnerability,5.7255,0.0983
+Rewa,Madhya Pradesh,3,Cluster 3: High Foundational Healthcare Vulnerability,4.5011,0.0886
+Umaria,Madhya Pradesh,2,Cluster 2: Intermediate / Progressing Health Profile,4.9926,0.0643
+Neemuch,Madhya Pradesh,2,Cluster 2: Intermediate / Progressing Health Profile,4.3267,0.1637
+Mandsaur,Madhya Pradesh,2,Cluster 2: Intermediate / Progressing Health Profile,5.8211,0.1247
+Ratlam,Madhya Pradesh,2,Cluster 2: Intermediate / Progressing Health Profile,4.5318,0.1585
+Ujjain,Madhya Pradesh,2,Cluster 2: Intermediate / Progressing Health Profile,5.3273,0.0946
+Dewas,Madhya Pradesh,2,Cluster 2: Intermediate / Progressing Health Profile,4.6369,0.0615
+Dhar,Madhya Pradesh,2,Cluster 2: Intermediate / Progressing Health Profile,5.2782,0.0637
+Indore,Madhya Pradesh,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.6325,0.0197
+Khargone (West Nimar),Madhya Pradesh,2,Cluster 2: Intermediate / Progressing Health Profile,4.1267,0.175
+Barwani,Madhya Pradesh,2,Cluster 2: Intermediate / Progressing Health Profile,4.8674,0.072
+Rajgarh,Madhya Pradesh,3,Cluster 3: High Foundational Healthcare Vulnerability,5.3768,0.0422
+Vidisha,Madhya Pradesh,2,Cluster 2: Intermediate / Progressing Health Profile,4.7474,0.0925
+Bhopal,Madhya Pradesh,2,Cluster 2: Intermediate / Progressing Health Profile,5.2193,0.0324
+Sehore,Madhya Pradesh,3,Cluster 3: High Foundational Healthcare Vulnerability,5.3479,0.0895
+Raisen,Madhya Pradesh,2,Cluster 2: Intermediate / Progressing Health Profile,4.5338,0.1321
+Betul,Madhya Pradesh,2,Cluster 2: Intermediate / Progressing Health Profile,5.2961,0.176
+Harda,Madhya Pradesh,2,Cluster 2: Intermediate / Progressing Health Profile,5.4559,0.1337
+Hoshangabad,Madhya Pradesh,3,Cluster 3: High Foundational Healthcare Vulnerability,5.6393,0.1202
+Katni,Madhya Pradesh,2,Cluster 2: Intermediate / Progressing Health Profile,4.5785,0.0646
+Jabalpur,Madhya Pradesh,2,Cluster 2: Intermediate / Progressing Health Profile,7.1105,0.1496
+Narsimhapur,Madhya Pradesh,2,Cluster 2: Intermediate / Progressing Health Profile,4.4273,0.162
+Dindori,Madhya Pradesh,2,Cluster 2: Intermediate / Progressing Health Profile,6.9706,0.0831
+Mandla,Madhya Pradesh,2,Cluster 2: Intermediate / Progressing Health Profile,5.3201,0.1615
+Chhindwara,Madhya Pradesh,2,Cluster 2: Intermediate / Progressing Health Profile,5.492,0.1606
+Seoni,Madhya Pradesh,2,Cluster 2: Intermediate / Progressing Health Profile,5.4665,0.2084
+Balaghat,Madhya Pradesh,2,Cluster 2: Intermediate / Progressing Health Profile,6.0602,0.1641
+Guna,Madhya Pradesh,2,Cluster 2: Intermediate / Progressing Health Profile,4.8923,0.129
+Ashoknagar,Madhya Pradesh,2,Cluster 2: Intermediate / Progressing Health Profile,4.7486,0.0312
+Shahdol,Madhya Pradesh,2,Cluster 2: Intermediate / Progressing Health Profile,4.7357,0.1283
+Anuppur,Madhya Pradesh,2,Cluster 2: Intermediate / Progressing Health Profile,5.0907,0.1273
+Sidhi,Madhya Pradesh,2,Cluster 2: Intermediate / Progressing Health Profile,5.4837,0.017
+Singrauli,Madhya Pradesh,2,Cluster 2: Intermediate / Progressing Health Profile,5.6746,-0.0107
+Jhabua,Madhya Pradesh,2,Cluster 2: Intermediate / Progressing Health Profile,6.5035,0.0709
+Alirajpur,Madhya Pradesh,2,Cluster 2: Intermediate / Progressing Health Profile,5.9682,0.1163
+Khandwa (East Nimar),Madhya Pradesh,2,Cluster 2: Intermediate / Progressing Health Profile,5.6314,0.1113
+Burhanpur,Madhya Pradesh,2,Cluster 2: Intermediate / Progressing Health Profile,4.7004,0.1368
+Agar Malwa,Madhya Pradesh,2,Cluster 2: Intermediate / Progressing Health Profile,5.8143,0.1372
+Shajapur,Madhya Pradesh,2,Cluster 2: Intermediate / Progressing Health Profile,4.8878,0.1321
+Nandurbar,Maharastra,3,Cluster 3: High Foundational Healthcare Vulnerability,5.3501,0.1165
+Dhule,Maharastra,3,Cluster 3: High Foundational Healthcare Vulnerability,5.7673,0.1666
+Jalgaon,Maharastra,3,Cluster 3: High Foundational Healthcare Vulnerability,4.8987,0.157
+Buldana,Maharastra,2,Cluster 2: Intermediate / Progressing Health Profile,5.199,0.1344
+Akola,Maharastra,2,Cluster 2: Intermediate / Progressing Health Profile,5.8499,0.0892
+Washim,Maharastra,3,Cluster 3: High Foundational Healthcare Vulnerability,7.3544,0.0214
+Amravati,Maharastra,2,Cluster 2: Intermediate / Progressing Health Profile,4.7402,0.1331
+Wardha,Maharastra,2,Cluster 2: Intermediate / Progressing Health Profile,4.9965,0.1304
+Nagpur,Maharastra,2,Cluster 2: Intermediate / Progressing Health Profile,6.526,0.0044
+Bhandara,Maharastra,2,Cluster 2: Intermediate / Progressing Health Profile,5.2804,0.1552
+Gondiya,Maharastra,2,Cluster 2: Intermediate / Progressing Health Profile,5.0842,0.1525
+Gadchiroli,Maharastra,2,Cluster 2: Intermediate / Progressing Health Profile,6.0794,0.1625
+Chandrapur,Maharastra,2,Cluster 2: Intermediate / Progressing Health Profile,6.4152,0.1183
+Yavatmal,Maharastra,2,Cluster 2: Intermediate / Progressing Health Profile,4.8674,0.1083
+Nanded,Maharastra,3,Cluster 3: High Foundational Healthcare Vulnerability,4.6509,0.0638
+Hingoli,Maharastra,2,Cluster 2: Intermediate / Progressing Health Profile,5.4838,0.0189
+Parbhani,Maharastra,3,Cluster 3: High Foundational Healthcare Vulnerability,6.0076,0.2132
+Jalna,Maharastra,3,Cluster 3: High Foundational Healthcare Vulnerability,6.6999,0.1425
+Aurangabad,Maharastra,3,Cluster 3: High Foundational Healthcare Vulnerability,5.3619,0.1472
+Nashik,Maharastra,3,Cluster 3: High Foundational Healthcare Vulnerability,5.855,0.0909
+Mumbai Suburban,Maharastra,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,4.9908,0.2271
+Mumbai,Maharastra,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.0026,0.1287
+Raigarh,Maharastra,2,Cluster 2: Intermediate / Progressing Health Profile,4.4923,-0.0011
+Pune,Maharastra,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.9689,0.0857
+Ahmadnagar,Maharastra,2,Cluster 2: Intermediate / Progressing Health Profile,5.7525,0.0185
+Bid,Maharastra,3,Cluster 3: High Foundational Healthcare Vulnerability,6.0648,0.1046
+Latur,Maharastra,2,Cluster 2: Intermediate / Progressing Health Profile,5.0543,0.0776
+Osmanabad,Maharastra,2,Cluster 2: Intermediate / Progressing Health Profile,5.6542,0.0453
+Solapur,Maharastra,2,Cluster 2: Intermediate / Progressing Health Profile,5.4964,0.044
+Satara,Maharastra,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.4323,0.0305
+Ratnagiri,Maharastra,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.0868,0.0549
+Sindhudurg,Maharastra,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,6.6438,0.1223
+Kolhapur,Maharastra,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.0862,0.1902
+Sangli,Maharastra,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.5214,0.1609
+Palghar,Maharastra,2,Cluster 2: Intermediate / Progressing Health Profile,5.3273,0.044
+Thane,Maharastra,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.0198,0.1431
+Senapati,Manipur,4,Cluster 4: Distinct Hill & Northeastern Health Geography,5.5674,0.2493
+Tamenglong,Manipur,4,Cluster 4: Distinct Hill & Northeastern Health Geography,5.0341,0.2337
+Churachandpur,Manipur,4,Cluster 4: Distinct Hill & Northeastern Health Geography,4.8531,0.2464
+Bishnupur,Manipur,4,Cluster 4: Distinct Hill & Northeastern Health Geography,6.8937,0.0894
+Thoubal,Manipur,4,Cluster 4: Distinct Hill & Northeastern Health Geography,7.1443,0.0791
+Imphal West,Manipur,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,8.377,0.0412
+Imphal East,Manipur,4,Cluster 4: Distinct Hill & Northeastern Health Geography,7.9655,0.0162
+Ukhrul,Manipur,4,Cluster 4: Distinct Hill & Northeastern Health Geography,6.8381,0.2183
+Chandel,Manipur,4,Cluster 4: Distinct Hill & Northeastern Health Geography,5.8392,0.213
+South Garo Hills,Meghalaya,4,Cluster 4: Distinct Hill & Northeastern Health Geography,7.0128,0.0495
+Ribhoi,Meghalaya,4,Cluster 4: Distinct Hill & Northeastern Health Geography,7.1983,0.0891
+East Khasi Hills,Meghalaya,4,Cluster 4: Distinct Hill & Northeastern Health Geography,7.3539,0.1469
+East Garo Hills,Meghalaya,4,Cluster 4: Distinct Hill & Northeastern Health Geography,6.3412,0.1328
+East Jantia Hills,Meghalaya,4,Cluster 4: Distinct Hill & Northeastern Health Geography,7.7728,0.0811
+North Garo Hills,Meghalaya,4,Cluster 4: Distinct Hill & Northeastern Health Geography,7.6861,0.1823
+South West Garo Hills,Meghalaya,4,Cluster 4: Distinct Hill & Northeastern Health Geography,7.5802,0.0262
+South West Khasi Hills,Meghalaya,4,Cluster 4: Distinct Hill & Northeastern Health Geography,8.2412,0.0598
+West Garo Hills,Meghalaya,4,Cluster 4: Distinct Hill & Northeastern Health Geography,6.5481,0.0355
+West Jaintia Hills,Meghalaya,4,Cluster 4: Distinct Hill & Northeastern Health Geography,8.4886,0.0722
+West Khasi Hills,Meghalaya,4,Cluster 4: Distinct Hill & Northeastern Health Geography,8.8189,0.0629
+Chandel,Mizoram,4,Cluster 4: Distinct Hill & Northeastern Health Geography,5.8392,0.213
+Mamit,Mizoram,4,Cluster 4: Distinct Hill & Northeastern Health Geography,6.1552,0.144
+Kolasib,Mizoram,4,Cluster 4: Distinct Hill & Northeastern Health Geography,6.315,0.0923
+Aizawl,Mizoram,4,Cluster 4: Distinct Hill & Northeastern Health Geography,7.451,0.0754
+Champhai,Mizoram,4,Cluster 4: Distinct Hill & Northeastern Health Geography,7.4508,0.039
+Serchhip,Mizoram,4,Cluster 4: Distinct Hill & Northeastern Health Geography,7.4963,0.0403
+Lunglei,Mizoram,4,Cluster 4: Distinct Hill & Northeastern Health Geography,5.5114,0.1735
+Lawngtlai,Mizoram,4,Cluster 4: Distinct Hill & Northeastern Health Geography,5.4473,0.1582
+Mon,Nagaland,4,Cluster 4: Distinct Hill & Northeastern Health Geography,7.8928,0.1319
+Mokokchung,Nagaland,4,Cluster 4: Distinct Hill & Northeastern Health Geography,6.2414,0.1508
+Zunheboto,Nagaland,4,Cluster 4: Distinct Hill & Northeastern Health Geography,8.1907,0.1466
+Wokha,Nagaland,4,Cluster 4: Distinct Hill & Northeastern Health Geography,6.7359,0.1813
+Dimapur,Nagaland,4,Cluster 4: Distinct Hill & Northeastern Health Geography,5.1335,0.1135
+Phek,Nagaland,4,Cluster 4: Distinct Hill & Northeastern Health Geography,6.4378,0.1712
+Tuensang,Nagaland,4,Cluster 4: Distinct Hill & Northeastern Health Geography,7.6279,0.1496
+Longleng,Nagaland,4,Cluster 4: Distinct Hill & Northeastern Health Geography,6.4092,0.1657
+Kiphire,Nagaland,4,Cluster 4: Distinct Hill & Northeastern Health Geography,7.5921,0.1172
+Kohima,Nagaland,4,Cluster 4: Distinct Hill & Northeastern Health Geography,5.7932,0.1424
+Peren,Nagaland,4,Cluster 4: Distinct Hill & Northeastern Health Geography,5.1501,0.169
+Central,NCT of Delhi,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,4.8226,0.2278
+East,NCT of Delhi,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.3994,0.1375
+New Delhi,NCT of Delhi,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,4.1202,0.2174
+North,NCT of Delhi,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,6.3389,0.0837
+North East,NCT of Delhi,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.8248,0.1677
+North West,NCT of Delhi,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.2973,0.1563
+Shahdara,NCT of Delhi,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,4.3874,0.1813
+South,NCT of Delhi,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.281,0.1655
+South East,NCT of Delhi,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,4.9935,0.1608
+South West,NCT of Delhi,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.2847,0.1671
+West,NCT of Delhi,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.9721,0.1472
+Bargarh,Odisha,2,Cluster 2: Intermediate / Progressing Health Profile,5.1249,0.0897
+Jharsuguda,Odisha,2,Cluster 2: Intermediate / Progressing Health Profile,6.1482,0.0473
+Sambalpur,Odisha,2,Cluster 2: Intermediate / Progressing Health Profile,5.1821,0.1443
+Debagarh,Odisha,2,Cluster 2: Intermediate / Progressing Health Profile,5.7001,0.1596
+Sundargarh,Odisha,2,Cluster 2: Intermediate / Progressing Health Profile,4.4788,0.181
+Kendujhar,Odisha,2,Cluster 2: Intermediate / Progressing Health Profile,5.6986,0.0479
+Mayurbhanj,Odisha,2,Cluster 2: Intermediate / Progressing Health Profile,6.8576,0.0527
+Baleshwar,Odisha,2,Cluster 2: Intermediate / Progressing Health Profile,6.4564,0.0548
+Bhadrak,Odisha,2,Cluster 2: Intermediate / Progressing Health Profile,6.2141,0.0919
+Kendrapara,Odisha,2,Cluster 2: Intermediate / Progressing Health Profile,6.4724,0.0058
+Jagatsinghapur,Odisha,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,6.8729,0.075
+Cuttack,Odisha,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,6.4234,0.0144
+Jajapur,Odisha,2,Cluster 2: Intermediate / Progressing Health Profile,6.6205,0.0643
+Dhenkanal,Odisha,2,Cluster 2: Intermediate / Progressing Health Profile,5.7038,0.1498
+Anugul,Odisha,2,Cluster 2: Intermediate / Progressing Health Profile,5.7291,0.147
+Nayagarh,Odisha,2,Cluster 2: Intermediate / Progressing Health Profile,6.9697,0.0105
+Khordha,Odisha,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,6.3086,0.0528
+Puri,Odisha,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,6.7909,0.0692
+Ganjam,Odisha,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.998,0.0428
+Gajapati,Odisha,2,Cluster 2: Intermediate / Progressing Health Profile,5.6329,0.1549
+Kandhamal,Odisha,2,Cluster 2: Intermediate / Progressing Health Profile,5.4388,0.1833
+Baudh,Odisha,2,Cluster 2: Intermediate / Progressing Health Profile,4.835,0.1616
+Subarnapur,Odisha,2,Cluster 2: Intermediate / Progressing Health Profile,4.7445,0.1271
+Balangir,Odisha,2,Cluster 2: Intermediate / Progressing Health Profile,5.6877,0.1552
+Nuapada,Odisha,2,Cluster 2: Intermediate / Progressing Health Profile,5.617,0.1567
+Kalahandi,Odisha,2,Cluster 2: Intermediate / Progressing Health Profile,4.364,0.2207
+Rayagada,Odisha,2,Cluster 2: Intermediate / Progressing Health Profile,6.3397,0.0993
+Nabarangapur,Odisha,2,Cluster 2: Intermediate / Progressing Health Profile,7.0005,0.1382
+Koraput,Odisha,2,Cluster 2: Intermediate / Progressing Health Profile,6.7964,0.1474
+Malkangiri,Odisha,2,Cluster 2: Intermediate / Progressing Health Profile,6.9854,0.1196
+Yanam,Puducherry,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.9184,0.2608
+Puducherry,Puducherry,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.3586,0.2695
+Mahe,Puducherry,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,8.0813,0.2509
+Karaikal,Puducherry,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,4.539,0.2367
+Kapurthala,Punjab,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.0486,0.2176
+Jalandhar,Punjab,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,4.6143,0.2628
+Hoshiarpur,Punjab,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.7777,0.218
+Shahid Bhagat Singh Nagar,Punjab,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.7455,0.23
+Fatehgarh Sahib,Punjab,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,4.524,0.2734
+Ludhiana,Punjab,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,4.9152,0.2154
+Moga,Punjab,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.2262,0.1187
+Muktsar,Punjab,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.1141,0.0876
+Faridkot,Punjab,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.0783,0.1704
+Bathinda,Punjab,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,7.3564,0.1079
+Mansa,Punjab,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.6169,0.1122
+Patiala,Punjab,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.0732,0.2089
+Amritsar,Punjab,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.5664,0.24
+Tarn Taran,Punjab,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.3572,0.1353
+Rupnagar,Punjab,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.5652,0.1922
+Sahibzada Ajit Singh Nagar,Punjab,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,4.4779,0.2309
+Sangrur,Punjab,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.5421,0.2043
+Barnala,Punjab,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.1544,0.2166
+Fazilka,Punjab,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.8117,0.0899
+Firozpur,Punjab,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.3542,0.1486
+Gurdaspur,Punjab,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.624,0.1855
+Pathankot,Punjab,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.1537,0.2005
+Ganganagar,Rajasthan,2,Cluster 2: Intermediate / Progressing Health Profile,4.709,0.1659
+Hanumangarh,Rajasthan,2,Cluster 2: Intermediate / Progressing Health Profile,4.9161,0.1086
+Bikaner,Rajasthan,2,Cluster 2: Intermediate / Progressing Health Profile,5.1587,0.1073
+Churu,Rajasthan,2,Cluster 2: Intermediate / Progressing Health Profile,4.4068,0.052
+Jhunjhunun,Rajasthan,2,Cluster 2: Intermediate / Progressing Health Profile,4.2664,0.1186
+Alwar,Rajasthan,3,Cluster 3: High Foundational Healthcare Vulnerability,4.7829,0.1508
+Bharatpur,Rajasthan,3,Cluster 3: High Foundational Healthcare Vulnerability,5.1344,0.1394
+Dhaulpur,Rajasthan,3,Cluster 3: High Foundational Healthcare Vulnerability,5.7531,0.0301
+Karauli,Rajasthan,2,Cluster 2: Intermediate / Progressing Health Profile,5.6567,-0.0072
+Sawai Madhopur,Rajasthan,3,Cluster 3: High Foundational Healthcare Vulnerability,5.4994,0.0726
+Dausa,Rajasthan,2,Cluster 2: Intermediate / Progressing Health Profile,5.5218,0.0638
+Jaipur,Rajasthan,2,Cluster 2: Intermediate / Progressing Health Profile,5.2284,0.1145
+Sikar,Rajasthan,2,Cluster 2: Intermediate / Progressing Health Profile,5.0554,0.0691
+Nagaur,Rajasthan,2,Cluster 2: Intermediate / Progressing Health Profile,4.4972,0.1356
+Jodhpur,Rajasthan,2,Cluster 2: Intermediate / Progressing Health Profile,4.6,0.1149
+Jaisalmer,Rajasthan,2,Cluster 2: Intermediate / Progressing Health Profile,5.6353,0.0694
+Barmer,Rajasthan,2,Cluster 2: Intermediate / Progressing Health Profile,5.754,0.143
+Jalor,Rajasthan,2,Cluster 2: Intermediate / Progressing Health Profile,5.0688,0.0806
+Sirohi,Rajasthan,2,Cluster 2: Intermediate / Progressing Health Profile,4.793,0.133
+Pali,Rajasthan,2,Cluster 2: Intermediate / Progressing Health Profile,5.1646,0.128
+Ajmer,Rajasthan,2,Cluster 2: Intermediate / Progressing Health Profile,4.4808,0.1031
+Tonk,Rajasthan,2,Cluster 2: Intermediate / Progressing Health Profile,5.0069,0.0611
+Bundi,Rajasthan,2,Cluster 2: Intermediate / Progressing Health Profile,5.7114,0.0622
+Bhilwara,Rajasthan,2,Cluster 2: Intermediate / Progressing Health Profile,5.253,0.137
+Rajsamand,Rajasthan,2,Cluster 2: Intermediate / Progressing Health Profile,5.1958,0.0927
+Dungarpur,Rajasthan,2,Cluster 2: Intermediate / Progressing Health Profile,5.2801,0.1226
+Banswara,Rajasthan,2,Cluster 2: Intermediate / Progressing Health Profile,5.5947,0.1053
+Chittaurgarh,Rajasthan,2,Cluster 2: Intermediate / Progressing Health Profile,5.2408,0.1204
+Kota,Rajasthan,2,Cluster 2: Intermediate / Progressing Health Profile,5.1563,0.1452
+Baran,Rajasthan,2,Cluster 2: Intermediate / Progressing Health Profile,5.7995,0.1579
+Jhalawar,Rajasthan,2,Cluster 2: Intermediate / Progressing Health Profile,5.2328,0.139
+Udaipur,Rajasthan,2,Cluster 2: Intermediate / Progressing Health Profile,5.0818,0.1713
+Pratapgarh,Rajasthan,2,Cluster 2: Intermediate / Progressing Health Profile,5.2369,0.1027
+North District,Sikkim,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,8.1216,0.1039
+West District,Sikkim,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,7.5935,0.0709
+South District,Sikkim,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,8.6267,0.1098
+East District,Sikkim,4,Cluster 4: Distinct Hill & Northeastern Health Geography,6.9507,-0.0379
+Thiruvallur,Tamil Nadu,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.4102,0.2839
+Chennai,Tamil Nadu,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.9244,0.2953
+Kancheepuram,Tamil Nadu,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,4.9461,0.2691
+Vellore,Tamil Nadu,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.0069,0.2178
+Tiruvannamalai,Tamil Nadu,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.1392,0.1751
+Viluppuram,Tamil Nadu,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.3616,0.1537
+Salem,Tamil Nadu,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.0551,0.2409
+Namakkal,Tamil Nadu,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,4.8746,0.2348
+Erode,Tamil Nadu,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,6.5392,0.188
+The Nilgiris,Tamil Nadu,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.3785,0.2406
+Dindigul,Tamil Nadu,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.3601,0.2269
+Karur,Tamil Nadu,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.4201,0.1913
+Tiruchirappalli,Tamil Nadu,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,4.9962,0.2139
+Perambalur,Tamil Nadu,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.3214,0.188
+Ariyalur,Tamil Nadu,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,6.007,0.1491
+Cuddalore,Tamil Nadu,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,4.2868,0.2156
+Nagapattinam,Tamil Nadu,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,4.9962,0.2061
+Thiruvarur,Tamil Nadu,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.7101,0.2394
+Thanjavur,Tamil Nadu,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.1678,0.2846
+Pudukkottai,Tamil Nadu,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.171,0.1598
+Sivaganga,Tamil Nadu,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.4463,0.2068
+Madurai,Tamil Nadu,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,4.4643,0.2841
+Theni,Tamil Nadu,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.6171,0.2573
+Virudhunagar,Tamil Nadu,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,4.5982,0.203
+Ramanathapuram,Tamil Nadu,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,4.0151,0.235
+Thoothukkudi,Tamil Nadu,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.3181,0.2554
+Tirunelveli,Tamil Nadu,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,4.6353,0.2662
+Kanniyakumari,Tamil Nadu,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,6.5588,0.2848
+Dharmapuri,Tamil Nadu,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.0162,0.1842
+Krishnagiri,Tamil Nadu,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.493,0.1459
+Coimbatore,Tamil Nadu,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.7365,0.2665
+Tiruppur,Tamil Nadu,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,4.8325,0.268
+Adilabad,Telangana,2,Cluster 2: Intermediate / Progressing Health Profile,5.883,-0.0116
+Bhadradri Kothagudem,Telangana,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,4.9062,0.1475
+Hyderabad,Telangana,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.4805,0.2587
+Jagitial,Telangana,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.3046,0.1613
+Jangoan,Telangana,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.609,0.0966
+Jayashankar Bhupalapally,Telangana,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,6.3792,0.0943
+Jogulamba Gadwal,Telangana,2,Cluster 2: Intermediate / Progressing Health Profile,7.0477,0.0352
+Kamareddy,Telangana,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,6.1084,0.0561
+Karimnagar,Telangana,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,6.1199,0.1593
+Khammam,Telangana,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.8811,0.1612
+Komaram Bheem Asifabad,Telangana,2,Cluster 2: Intermediate / Progressing Health Profile,5.6969,0.0162
+Mahabubabad,Telangana,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,6.1282,0.0604
+Mahabubnagar,Telangana,2,Cluster 2: Intermediate / Progressing Health Profile,5.9969,-0.0005
+Mancherial,Telangana,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.6001,0.1308
+Medak,Telangana,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,6.7513,0.0719
+Medchal-Malkajgiri,Telangana,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,4.1951,0.2142
+Nagarkurnool,Telangana,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,6.1223,0.0467
+Nalgonda,Telangana,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.7946,0.085
+Nirmal,Telangana,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,6.4526,0.062
+Nizamabad,Telangana,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,6.5436,0.1063
+Peddapalli,Telangana,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.3997,0.165
+Rajanna Sircilla,Telangana,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.3696,0.179
+Ranga Reddy,Telangana,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,4.991,0.165
+Sangareddy,Telangana,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.6103,0.0711
+Siddipet,Telangana,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.2503,0.1854
+Suryapet,Telangana,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.8809,0.1684
+Vikarabad,Telangana,2,Cluster 2: Intermediate / Progressing Health Profile,6.5481,-0.0023
+Wanaparthy,Telangana,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,6.246,0.0395
+Warangal Rural,Telangana,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,6.3968,0.1129
+Warangal Urban,Telangana,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.2867,0.1418
+Yadadri Bhuvanagiri,Telangana,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.2818,0.1408
+Dhalai,Tripura,3,Cluster 3: High Foundational Healthcare Vulnerability,8.0323,0.0453
+Gomati,Tripura,3,Cluster 3: High Foundational Healthcare Vulnerability,7.1986,0.0949
+Khowai,Tripura,3,Cluster 3: High Foundational Healthcare Vulnerability,7.6801,0.0264
+North Tripura,Tripura,2,Cluster 2: Intermediate / Progressing Health Profile,6.9974,0.0221
+Sepahijala,Tripura,3,Cluster 3: High Foundational Healthcare Vulnerability,7.7762,0.0731
+South Tripura,Tripura,3,Cluster 3: High Foundational Healthcare Vulnerability,7.2882,0.1409
+Unakoti,Tripura,3,Cluster 3: High Foundational Healthcare Vulnerability,6.86,0.1642
+West Tripura,Tripura,2,Cluster 2: Intermediate / Progressing Health Profile,6.9465,0.0103
+Saharanpur,Uttar Pradesh,2,Cluster 2: Intermediate / Progressing Health Profile,5.3904,0.0611
+Bijnor,Uttar Pradesh,2,Cluster 2: Intermediate / Progressing Health Profile,5.62,0.0378
+Rampur,Uttar Pradesh,3,Cluster 3: High Foundational Healthcare Vulnerability,4.7725,0.093
+Jyotiba Phule Nagar,Uttar Pradesh,3,Cluster 3: High Foundational Healthcare Vulnerability,5.3016,0.0536
+Meerut,Uttar Pradesh,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,6.07,0.0335
+Baghpat,Uttar Pradesh,2,Cluster 2: Intermediate / Progressing Health Profile,5.8284,0.0364
+Gautam Buddha Nagar,Uttar Pradesh,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.6793,0.0179
+Bulandshahr,Uttar Pradesh,2,Cluster 2: Intermediate / Progressing Health Profile,5.1872,-0.005
+Aligarh,Uttar Pradesh,2,Cluster 2: Intermediate / Progressing Health Profile,4.882,-0.0228
+Mahamaya Nagar,Uttar Pradesh,3,Cluster 3: High Foundational Healthcare Vulnerability,5.2408,0.2199
+Mathura,Uttar Pradesh,3,Cluster 3: High Foundational Healthcare Vulnerability,4.623,0.1864
+Agra,Uttar Pradesh,3,Cluster 3: High Foundational Healthcare Vulnerability,4.6041,0.1194
+Firozabad,Uttar Pradesh,3,Cluster 3: High Foundational Healthcare Vulnerability,4.2687,0.1831
+Mainpuri,Uttar Pradesh,3,Cluster 3: High Foundational Healthcare Vulnerability,4.1517,0.1309
+Bareilly,Uttar Pradesh,3,Cluster 3: High Foundational Healthcare Vulnerability,5.107,0.0568
+Pilibhit,Uttar Pradesh,3,Cluster 3: High Foundational Healthcare Vulnerability,4.7405,0.0504
+Shahjahanpur,Uttar Pradesh,3,Cluster 3: High Foundational Healthcare Vulnerability,4.8437,0.1379
+Kheri,Uttar Pradesh,3,Cluster 3: High Foundational Healthcare Vulnerability,3.8949,0.1985
+Sitapur,Uttar Pradesh,3,Cluster 3: High Foundational Healthcare Vulnerability,4.7228,0.1947
+Hardoi,Uttar Pradesh,3,Cluster 3: High Foundational Healthcare Vulnerability,3.7501,0.1977
+Unnao,Uttar Pradesh,3,Cluster 3: High Foundational Healthcare Vulnerability,4.8855,0.2368
+Lucknow,Uttar Pradesh,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.7305,-0.0032
+Farrukhabad,Uttar Pradesh,3,Cluster 3: High Foundational Healthcare Vulnerability,4.5154,0.1407
+Kannauj,Uttar Pradesh,3,Cluster 3: High Foundational Healthcare Vulnerability,4.9711,0.1407
+Etawah,Uttar Pradesh,3,Cluster 3: High Foundational Healthcare Vulnerability,4.4594,0.0357
+Auraiya,Uttar Pradesh,3,Cluster 3: High Foundational Healthcare Vulnerability,5.6827,0.0513
+Kanpur Dehat,Uttar Pradesh,3,Cluster 3: High Foundational Healthcare Vulnerability,4.5395,0.1417
+Kanpur Nagar,Uttar Pradesh,2,Cluster 2: Intermediate / Progressing Health Profile,4.9761,0.0092
+Jalaun,Uttar Pradesh,3,Cluster 3: High Foundational Healthcare Vulnerability,5.4264,0.0394
+Jhansi,Uttar Pradesh,3,Cluster 3: High Foundational Healthcare Vulnerability,5.1842,0.1308
+Lalitpur,Uttar Pradesh,3,Cluster 3: High Foundational Healthcare Vulnerability,5.2039,0.0754
+Hamirpur,Uttar Pradesh,2,Cluster 2: Intermediate / Progressing Health Profile,6.2294,-0.0
+Mahoba,Uttar Pradesh,3,Cluster 3: High Foundational Healthcare Vulnerability,6.0996,0.0546
+Banda,Uttar Pradesh,3,Cluster 3: High Foundational Healthcare Vulnerability,5.3472,0.1643
+Chitrakoot,Uttar Pradesh,3,Cluster 3: High Foundational Healthcare Vulnerability,4.8909,0.2031
+Fatehpur,Uttar Pradesh,3,Cluster 3: High Foundational Healthcare Vulnerability,5.036,0.1619
+Pratapgarh,Uttar Pradesh,3,Cluster 3: High Foundational Healthcare Vulnerability,5.622,0.1376
+Kaushambi,Uttar Pradesh,3,Cluster 3: High Foundational Healthcare Vulnerability,4.1927,0.1437
+Allahabad,Uttar Pradesh,3,Cluster 3: High Foundational Healthcare Vulnerability,4.866,0.1651
+Bara Banki,Uttar Pradesh,3,Cluster 3: High Foundational Healthcare Vulnerability,4.6683,0.2619
+Faizabad,Uttar Pradesh,3,Cluster 3: High Foundational Healthcare Vulnerability,6.5791,0.1328
+Ambedkar Nagar,Uttar Pradesh,3,Cluster 3: High Foundational Healthcare Vulnerability,5.8799,0.1167
+Bahraich,Uttar Pradesh,3,Cluster 3: High Foundational Healthcare Vulnerability,6.8848,0.2407
+Shrawasti,Uttar Pradesh,3,Cluster 3: High Foundational Healthcare Vulnerability,5.7663,0.2284
+Balrampur,Uttar Pradesh,3,Cluster 3: High Foundational Healthcare Vulnerability,5.3034,0.2294
+Gonda,Uttar Pradesh,3,Cluster 3: High Foundational Healthcare Vulnerability,6.5669,0.2027
+Siddharthnagar,Uttar Pradesh,3,Cluster 3: High Foundational Healthcare Vulnerability,4.7249,0.1575
+Basti,Uttar Pradesh,3,Cluster 3: High Foundational Healthcare Vulnerability,5.5893,0.1046
+Sant Kabir Nagar,Uttar Pradesh,3,Cluster 3: High Foundational Healthcare Vulnerability,4.6838,0.0732
+Mahrajganj,Uttar Pradesh,3,Cluster 3: High Foundational Healthcare Vulnerability,4.309,0.0801
+Gorakhpur,Uttar Pradesh,3,Cluster 3: High Foundational Healthcare Vulnerability,5.0517,0.0552
+Kushinagar,Uttar Pradesh,3,Cluster 3: High Foundational Healthcare Vulnerability,4.7351,0.1593
+Deoria,Uttar Pradesh,3,Cluster 3: High Foundational Healthcare Vulnerability,5.6626,0.1359
+Azamgarh,Uttar Pradesh,3,Cluster 3: High Foundational Healthcare Vulnerability,5.9557,0.1572
+Mau,Uttar Pradesh,3,Cluster 3: High Foundational Healthcare Vulnerability,5.9112,0.0618
+Ballia,Uttar Pradesh,3,Cluster 3: High Foundational Healthcare Vulnerability,5.132,0.1858
+Jaunpur,Uttar Pradesh,3,Cluster 3: High Foundational Healthcare Vulnerability,5.6508,0.0736
+Ghazipur,Uttar Pradesh,3,Cluster 3: High Foundational Healthcare Vulnerability,4.4054,0.1655
+Chandauli,Uttar Pradesh,3,Cluster 3: High Foundational Healthcare Vulnerability,4.1395,0.1368
+Varanasi,Uttar Pradesh,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.2658,0.0176
+Sant Ravidas Nagar (Bhadohi),Uttar Pradesh,3,Cluster 3: High Foundational Healthcare Vulnerability,5.4475,0.191
+Mirzapur,Uttar Pradesh,3,Cluster 3: High Foundational Healthcare Vulnerability,4.8592,0.1319
+Sonbhadra,Uttar Pradesh,3,Cluster 3: High Foundational Healthcare Vulnerability,4.3039,0.1335
+Etah,Uttar Pradesh,3,Cluster 3: High Foundational Healthcare Vulnerability,5.0405,0.1952
+Kanshiram Nagar,Uttar Pradesh,3,Cluster 3: High Foundational Healthcare Vulnerability,3.7153,0.2437
+Amethi,Uttar Pradesh,3,Cluster 3: High Foundational Healthcare Vulnerability,4.7681,0.1233
+Budaun,Uttar Pradesh,3,Cluster 3: High Foundational Healthcare Vulnerability,4.035,0.2087
+Ghaziabad,Uttar Pradesh,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.3172,0.1428
+Hapur,Uttar Pradesh,2,Cluster 2: Intermediate / Progressing Health Profile,5.7313,0.0089
+Moradabad,Uttar Pradesh,3,Cluster 3: High Foundational Healthcare Vulnerability,5.6533,0.0487
+Muzaffarnagar,Uttar Pradesh,2,Cluster 2: Intermediate / Progressing Health Profile,5.6038,0.0054
+Rae Bareli,Uttar Pradesh,3,Cluster 3: High Foundational Healthcare Vulnerability,4.3385,0.1326
+Sambhal,Uttar Pradesh,3,Cluster 3: High Foundational Healthcare Vulnerability,4.9063,0.1389
+Shamli,Uttar Pradesh,2,Cluster 2: Intermediate / Progressing Health Profile,5.869,0.0529
+Sultanpur,Uttar Pradesh,3,Cluster 3: High Foundational Healthcare Vulnerability,6.1793,0.1114
+Uttarkashi,Uttarakhand,2,Cluster 2: Intermediate / Progressing Health Profile,4.5152,0.1241
+Chamoli,Uttarakhand,2,Cluster 2: Intermediate / Progressing Health Profile,6.8569,0.0402
+Rudraprayag,Uttarakhand,2,Cluster 2: Intermediate / Progressing Health Profile,5.8762,0.0104
+Tehri Garhwal,Uttarakhand,2,Cluster 2: Intermediate / Progressing Health Profile,5.9211,0.0698
+Dehradun,Uttarakhand,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,4.4967,0.1517
+Garhwal,Uttarakhand,4,Cluster 4: Distinct Hill & Northeastern Health Geography,5.4708,0.0041
+Pithoragarh,Uttarakhand,2,Cluster 2: Intermediate / Progressing Health Profile,6.3572,0.0193
+Bageshwar,Uttarakhand,2,Cluster 2: Intermediate / Progressing Health Profile,6.9283,0.067
+Almora,Uttarakhand,2,Cluster 2: Intermediate / Progressing Health Profile,6.4846,0.0065
+Champawat,Uttarakhand,2,Cluster 2: Intermediate / Progressing Health Profile,5.8963,0.0098
+Nainital,Uttarakhand,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.6492,0.0539
+Udham Singh Nagar,Uttarakhand,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,4.2014,0.0676
+Hardwar,Uttarakhand,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,5.529,0.0231
+Darjiling,West Bengal,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,6.0168,0.0069
+Jalpaiguri,West Bengal,2,Cluster 2: Intermediate / Progressing Health Profile,5.5796,0.1394
+Koch Bihar,West Bengal,2,Cluster 2: Intermediate / Progressing Health Profile,6.9522,0.0794
+Uttar Dinajpur,West Bengal,2,Cluster 2: Intermediate / Progressing Health Profile,5.8919,0.029
+Dakshin Dinajpur,West Bengal,2,Cluster 2: Intermediate / Progressing Health Profile,6.8494,0.0949
+Maldah,West Bengal,2,Cluster 2: Intermediate / Progressing Health Profile,6.3154,0.032
+Murshidabad,West Bengal,3,Cluster 3: High Foundational Healthcare Vulnerability,6.7583,0.0211
+Birbhum,West Bengal,2,Cluster 2: Intermediate / Progressing Health Profile,7.2553,0.0324
+Nadia,West Bengal,2,Cluster 2: Intermediate / Progressing Health Profile,6.3258,0.0559
+North Twenty Four Pargana,West Bengal,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,6.4757,0.0143
+Hugli,West Bengal,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,6.2733,0.0283
+Bankura,West Bengal,2,Cluster 2: Intermediate / Progressing Health Profile,6.3143,-0.0103
+Puruliya,West Bengal,3,Cluster 3: High Foundational Healthcare Vulnerability,6.5018,0.0727
+Haora,West Bengal,2,Cluster 2: Intermediate / Progressing Health Profile,5.4652,-0.0029
+Kolkata,West Bengal,1,Cluster 1: Advanced Infrastructure & Emerging Lifestyle/NCD Risk,6.8537,0.044
+South Twenty Four Pargana,West Bengal,2,Cluster 2: Intermediate / Progressing Health Profile,6.1354,0.0855
+Paschim Medinipur,West Bengal,2,Cluster 2: Intermediate / Progressing Health Profile,7.3236,-0.0008
+Purba Medinipur,West Bengal,2,Cluster 2: Intermediate / Progressing Health Profile,7.6833,-0.0039
+Paschim Barddhaman,West Bengal,3,Cluster 3: High Foundational Healthcare Vulnerability,6.277,0.041
