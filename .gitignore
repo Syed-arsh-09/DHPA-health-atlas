@@ -12,6 +12,10 @@ __pycache__/
 # OS
 .DS_Store
 
+# Matplotlib cache
+outputs/.mpl_cache/
+.mpl_cache/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
