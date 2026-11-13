@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Navbar from './components/Navbar';
+import GlobalCursor from './components/GlobalCursor';
 import HomeOverview from './views/HomeOverview';
 import StateAnalysis from './views/StateAnalysis';
 import CategoryAnalysis from './views/CategoryAnalysis';
@@ -30,6 +31,9 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-slate-950 text-slate-100 flex flex-col font-['Plus_Jakarta_Sans',sans-serif]">
+      {/* Global Interactive Cursor */}
+      <GlobalCursor />
+
       {/* Top Navigation */}
       <Navbar 
         activePage={activePage} 

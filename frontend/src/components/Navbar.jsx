@@ -54,9 +54,9 @@ export default function Navbar({ activePage, setActivePage, onSelectDistrict, di
             <div>
               <div className="flex items-baseline gap-2">
                 <span className="font-bold text-base tracking-tight text-white">DHPA India</span>
-                <span className="text-xs text-slate-400 font-normal hidden sm:inline">Health Atlas</span>
+                <span className="text-xs text-slate-400 font-normal hidden sm:inline"></span>
               </div>
-              <p className="text-[11px] text-slate-400 hidden md:block">District Healthcare Priority Clustering</p>
+              <p className="text-[11px] text-slate-400 hidden md:block"></p>
             </div>
           </button>
 
