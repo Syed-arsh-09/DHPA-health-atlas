@@ -1,3 +1,6 @@
+#Agents
+.agents/
+
 # Models
 models/
 *.pkl
