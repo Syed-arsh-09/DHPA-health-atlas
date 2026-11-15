@@ -354,7 +354,6 @@ The **Deterministic Recommendation Engine** audits indicator values against clin
 
 * **Author:** Syed Arsh Ahmad
 * **Program:** B.Tech — Computer Science & Engineering
-* **Course:** INT-396 (Capstone Project)
 * **GitHub Repository:** [Syed-arsh-09/DHPA-health-atlas](https://github.com/Syed-arsh-09/DHPA-health-atlas)
 
 ---
