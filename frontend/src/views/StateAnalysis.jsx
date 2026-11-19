@@ -2,8 +2,17 @@ import React, { useState } from 'react';
 import { 
   ChevronRight, 
   ArrowUpDown,
-  Search
+  Search,
+  MapPin,
+  ShieldAlert,
+  CheckCircle2,
+  AlertTriangle,
+  LayoutGrid,
+  List,
+  Sparkles,
+  Map as MapIcon
 } from 'lucide-react';
+import IndiaMap from '../components/IndiaMap';
 
 export default function StateAnalysis({ 
   districts, 
@@ -13,18 +22,20 @@ export default function StateAnalysis({
   onSelectDistrict 
 }) {
   const [districtSearch, setDistrictSearch] = useState('');
-  const [sortField, setSortField] = useState('compound'); // 'compound' | 'name' | 'cluster'
+  const [sortField, setSortField] = useState('compound'); // 'compound' | 'name'
   const [sortAsc, setSortAsc] = useState(false);
+  const [viewMode, setViewMode] = useState('cards'); // 'cards' | 'table'
+  const [showMap, setShowMap] = useState(true);
 
   const stateData = metadata.states.find(s => s.state === selectedState) || metadata.states[0];
   const stateDistricts = districts.filter(d => d.state === selectedState);
 
-  // Cluster colors & labels
+  // Friendly cluster labels
   const clusterBadges = {
-    1: { label: 'Cluster 1: Advanced / NCD', color: 'text-sky-400 bg-sky-950/60 border-sky-800/80' },
-    2: { label: 'Cluster 2: Intermediate', color: 'text-emerald-400 bg-emerald-950/60 border-emerald-800/80' },
-    3: { label: 'Cluster 3: Foundational Deficits', color: 'text-rose-400 bg-rose-950/60 border-rose-800/80' },
-    4: { label: 'Cluster 4: Hill / Northeast', color: 'text-amber-400 bg-amber-950/60 border-amber-800/80' },
+    1: { label: 'Advanced Facilities & Lifestyle Risk', color: 'text-sky-400 bg-sky-950/60 border-sky-800/80' },
+    2: { label: 'Progressing & Child Nutrition Gap', color: 'text-emerald-400 bg-emerald-950/60 border-emerald-800/80' },
+    3: { label: 'Foundational Healthcare Needs', color: 'text-rose-400 bg-rose-950/60 border-rose-800/80' },
+    4: { label: 'Hill & Mountain Geography', color: 'text-amber-400 bg-amber-950/60 border-amber-800/80' },
   };
 
   // Filter & sort districts
@@ -36,245 +47,283 @@ export default function StateAnalysis({
         comp = a.compound_vulnerability.score - b.compound_vulnerability.score;
       } else if (sortField === 'name') {
         comp = a.name.localeCompare(b.name);
-      } else if (sortField === 'cluster') {
-        comp = a.cluster_a.id - b.cluster_a.id;
       }
       return sortAsc ? comp : -comp;
     });
 
-  const getDomainTierBadge = (tier) => {
-    if (tier === 3) return <span className="inline-block w-2.5 h-2.5 rounded-full bg-rose-500" title="Tier 3: Severe Deficit" />;
-    if (tier === 2) return <span className="inline-block w-2.5 h-2.5 rounded-full bg-amber-500" title="Tier 2: Moderate" />;
-    return <span className="inline-block w-2.5 h-2.5 rounded-full bg-emerald-500" title="Tier 1: Low Deficit" />;
-  };
+  // Health summary for this state
+  const stateAssessment = (() => {
+    const avg = stateData.avg_compound_score || 0;
+    if (avg >= 3.0) {
+      return {
+        pill: '🔴 High Priority State Support Needed',
+        color: 'rose',
+        text: `Several districts in ${selectedState} face overlapping challenges across maternal checkups, child anaemia, and sanitation. Focused resources under the National Health Mission are active.`
+      };
+    } else if (avg >= 1.5) {
+      return {
+        pill: '🟡 Progressing • Targeted Health Support',
+        color: 'amber',
+        text: `${selectedState} maintains solid primary delivery and immunization, but community outreach is required to curb child anaemia and support rural clinics.`
+      };
+    } else {
+      return {
+        pill: '🟢 Strong Healthcare Infrastructure',
+        color: 'emerald',
+        text: `${selectedState} exhibits high hospital delivery rates, good immunisation, and strong living amenities. Management of lifestyle conditions is the primary area of focus.`
+      };
+    }
+  })();
 
   return (
-    <div className="space-y-6 pb-16">
+    <div className="space-y-6 pb-20">
       
-      {/* State Header & Administrative Overview */}
-      <section className="bg-slate-900 border border-slate-800 rounded-xl p-6 sm:p-8">
-        <div className="flex flex-col md:flex-row md:items-start justify-between gap-6">
-          <div className="max-w-2xl">
-            <h1 className="text-2xl sm:text-3xl font-bold text-white tracking-tight">
+      {/* State Header Card */}
+      <section className="bg-slate-900 border border-slate-800 rounded-2xl p-6 sm:p-8 space-y-6 shadow-xl">
+        <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
+          <div className="space-y-2 max-w-2xl">
+            <div className="flex items-center gap-2">
+              <span className="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-slate-950 text-slate-300 border border-slate-800">
+                {stateAssessment.pill}
+              </span>
+              <span className="text-xs text-slate-400">
+                {stateDistricts.length} Administrative Districts
+              </span>
+            </div>
+
+            <h1 className="text-2xl sm:text-4xl font-black text-white tracking-tight">
               {selectedState}
             </h1>
-            <p className="text-xs sm:text-sm text-slate-400 mt-2">
-              State-level aggregation across {stateDistricts.length} administrative districts. Average multi-domain compound deficit score: <span className="font-semibold text-white tabular-nums">{stateData.avg_compound_score} / 6</span>.
+
+            <p className="text-sm text-slate-300 leading-relaxed">
+              {stateAssessment.text}
             </p>
           </div>
 
-          {/* State Switcher Dropdown */}
-          <div className="w-full md:w-72 shrink-0">
-            <label htmlFor="state-select" className="text-xs text-slate-400 block mb-1.5 font-medium">
-              Select State / UT
-            </label>
-            <select
-              id="state-select"
-              value={selectedState}
-              onChange={(e) => setSelectedState(e.target.value)}
-              className="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-blue-500 transition-colors"
-            >
-              {metadata.states.map(s => (
-                <option key={s.state} value={s.state}>
-                  {s.state} ({s.district_count} districts)
-                </option>
-              ))}
-            </select>
+          {/* Quick Metrics */}
+          <div className="grid grid-cols-3 gap-3 bg-slate-950 p-4 rounded-2xl border border-slate-800 shrink-0">
+            <div className="text-center px-2">
+              <span className="text-[11px] text-slate-400 block font-medium">Districts</span>
+              <span className="text-xl sm:text-2xl font-extrabold text-white mt-0.5 block">
+                {stateDistricts.length}
+              </span>
+            </div>
+            <div className="text-center px-2 border-l border-slate-800">
+              <span className="text-[11px] text-slate-400 block font-medium">Average Gaps</span>
+              <span className="text-xl sm:text-2xl font-extrabold text-white mt-0.5 block">
+                {stateData.avg_compound_score} <span className="text-xs text-slate-500 font-normal">/ 6</span>
+              </span>
+            </div>
+            <div className="text-center px-2 border-l border-slate-800">
+              <span className="text-[11px] text-slate-400 block font-medium">Urgent Areas</span>
+              <span className={`text-xl sm:text-2xl font-extrabold mt-0.5 block ${
+                stateData.mission_mode_count > 0 ? 'text-rose-400' : 'text-emerald-400'
+              }`}>
+                {stateData.mission_mode_count}
+              </span>
+            </div>
           </div>
         </div>
 
-        {/* State KPI Strip */}
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-8 pt-6 border-t border-slate-800">
-          <div>
-            <span className="text-xs text-slate-400 block font-medium">Districts Evaluated</span>
-            <div className="text-2xl font-bold text-white mt-1 tabular-nums">{stateDistricts.length}</div>
-          </div>
-
-          <div className="border-l-0 sm:border-l border-slate-800 sm:pl-6">
-            <span className="text-xs text-slate-400 block font-medium">Mission Mode Districts (≥4)</span>
-            <div className={`text-2xl font-bold mt-1 tabular-nums ${stateData.mission_mode_count > 0 ? 'text-rose-400' : 'text-slate-200'}`}>
-              {stateData.mission_mode_count}
-            </div>
-          </div>
-
-          <div className="border-l-0 sm:border-l border-slate-800 sm:pl-6">
-            <span className="text-xs text-slate-400 block font-medium">Average Vulnerability</span>
-            <div className="text-2xl font-bold text-white mt-1 tabular-nums">
-              {stateData.avg_compound_score} <span className="text-xs text-slate-400 font-normal">/ 6</span>
-            </div>
-          </div>
-
-          <div className="border-l-0 sm:border-l border-slate-800 sm:pl-6">
-            <span className="text-xs text-slate-400 block font-medium">Dominant Typology</span>
-            <div className="text-sm font-semibold text-sky-400 mt-2 truncate">
-              {Object.entries(stateData.cluster_breakdown).sort((a,b) => b[1] - a[1])[0] 
-                ? metadata.clusters_a[Object.entries(stateData.cluster_breakdown).sort((a,b) => b[1] - a[1])[0][0]]?.short_name 
-                : 'Mixed'}
-            </div>
-          </div>
+        {/* State Map Toggle Button */}
+        <div className="pt-2 flex items-center justify-between border-t border-slate-800/80">
+          <span className="text-xs text-slate-400">
+            Interactive map shows all district boundaries for {selectedState}:
+          </span>
+          <button
+            onClick={() => setShowMap(!showMap)}
+            className="px-3.5 py-1.5 text-xs font-semibold rounded-xl bg-slate-800 hover:bg-slate-750 text-slate-200 border border-slate-700 transition-colors flex items-center gap-1.5"
+          >
+            <MapIcon className="w-3.5 h-3.5 text-blue-400" />
+            <span>{showMap ? 'Hide State Map' : '🗺️ View State Map'}</span>
+          </button>
         </div>
       </section>
 
-      {/* Cluster Distribution in State */}
-      <section className="bg-slate-900 border border-slate-800 rounded-xl p-5 space-y-4">
-        <div className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1">
-          <h2 className="text-base font-bold text-white tracking-tight">
-            Engine A Typology Distribution in {selectedState}
-          </h2>
-          <span className="text-xs text-slate-400">Share of administrative districts</span>
-        </div>
+      {/* Interactive Map (Drilled into State) */}
+      {showMap && (
+        <section className="animate-fade-in">
+          <IndiaMap
+            selectedState={selectedState}
+            onSelectState={(st) => setSelectedState(st)}
+            onSelectDistrict={(d) => onSelectDistrict(d)}
+            districtsData={districts}
+            initialZoomToState={true}
+          />
+        </section>
+      )}
 
-        <div className="grid grid-cols-1 sm:grid-cols-4 gap-3">
-          {[1, 2, 3, 4].map(cId => {
-            const count = stateDistricts.filter(d => d.cluster_a.id === cId).length;
-            const pct = stateDistricts.length > 0 ? (count / stateDistricts.length * 100).toFixed(1) : 0;
-            const meta = metadata.clusters_a[cId];
-            return (
-              <div key={cId} className="bg-slate-950 border border-slate-800 rounded-lg p-3 space-y-2">
-                <div className="flex items-baseline justify-between">
-                  <span className="text-xs font-medium text-slate-300 truncate pr-2">{meta.short_name}</span>
-                  <span className="text-sm font-bold text-white tabular-nums">{count}</span>
-                </div>
-                <div className="w-full bg-slate-800 rounded-full h-1.5 overflow-hidden">
-                  <div 
-                    className="h-full rounded-full transition-all" 
-                    style={{ width: `${pct}%`, backgroundColor: meta.color }}
-                  ></div>
-                </div>
-                <span className="text-[11px] text-slate-400 block tabular-nums">{pct}% of state</span>
-              </div>
-            );
-          })}
-        </div>
-      </section>
-
-      {/* District Vulnerability Rankings Table */}
-      <section className="bg-slate-900 border border-slate-800 rounded-xl p-5 space-y-4">
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+      {/* District Explorer Section */}
+      <section className="space-y-4">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 bg-slate-900 border border-slate-800 rounded-2xl p-4">
           <div>
             <h2 className="text-base font-bold text-white tracking-tight">
-              District Priority & Vulnerability Audit
+              Districts in {selectedState} ({stateDistricts.length})
             </h2>
             <p className="text-xs text-slate-400">
-              Click any district to inspect its comprehensive 47-indicator report card
+              Click any district card to view its full health profile
             </p>
           </div>
 
-          <div className="flex flex-wrap items-center gap-2.5">
-            {/* District Search */}
+          <div className="flex flex-wrap items-center gap-2">
+            {/* Search */}
             <div className="relative">
               <Search className="w-3.5 h-3.5 text-slate-400 absolute left-2.5 top-1/2 -translate-y-1/2 pointer-events-none" />
               <input
                 type="text"
-                placeholder="Filter districts..."
+                placeholder="Search district..."
                 value={districtSearch}
                 onChange={(e) => setDistrictSearch(e.target.value)}
-                className="bg-slate-950 border border-slate-800 rounded-md pl-7 pr-2.5 py-1 text-xs text-white placeholder-slate-400 focus:outline-none focus:border-blue-500 w-36 sm:w-44"
+                className="bg-slate-950 border border-slate-800 rounded-xl pl-8 pr-3 py-1.5 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-blue-500 w-36 sm:w-48"
               />
             </div>
 
-            {/* Sort Dropdown */}
-            <select
-              value={sortField}
-              onChange={(e) => setSortField(e.target.value)}
-              className="bg-slate-950 border border-slate-800 rounded-md px-2 py-1 text-xs text-slate-200 focus:outline-none focus:border-blue-500"
-            >
-              <option value="compound">Sort: Vulnerability Score</option>
-              <option value="name">Sort: District Name</option>
-              <option value="cluster">Sort: Macro Typology</option>
-            </select>
-
+            {/* Sort Toggle */}
             <button
-              onClick={() => setSortAsc(!sortAsc)}
-              className="p-1 rounded bg-slate-950 border border-slate-800 text-slate-300 hover:text-white transition-colors"
-              title="Toggle sort direction"
-              aria-label="Toggle sort direction"
+              onClick={() => {
+                if (sortField === 'compound') {
+                  setSortAsc(!sortAsc);
+                } else {
+                  setSortField('compound');
+                  setSortAsc(false);
+                }
+              }}
+              className="px-3 py-1.5 text-xs font-semibold rounded-xl bg-slate-950 hover:bg-slate-800 text-slate-300 border border-slate-800 transition-colors flex items-center gap-1.5"
             >
-              <ArrowUpDown className="w-3.5 h-3.5" />
+              <ArrowUpDown className="w-3.5 h-3.5 text-blue-400" />
+              <span>Sort: {sortField === 'compound' ? (sortAsc ? 'Lowest Deficit' : 'Highest Need') : 'Name'}</span>
             </button>
+
+            {/* View Mode Toggle */}
+            <div className="flex items-center bg-slate-950 border border-slate-800 rounded-xl p-0.5">
+              <button
+                onClick={() => setViewMode('cards')}
+                className={`p-1.5 rounded-lg transition-colors ${
+                  viewMode === 'cards' ? 'bg-blue-600 text-white' : 'text-slate-400 hover:text-white'
+                }`}
+                title="Card View"
+              >
+                <LayoutGrid className="w-3.5 h-3.5" />
+              </button>
+              <button
+                onClick={() => setViewMode('table')}
+                className={`p-1.5 rounded-lg transition-colors ${
+                  viewMode === 'table' ? 'bg-blue-600 text-white' : 'text-slate-400 hover:text-white'
+                }`}
+                title="Table View"
+              >
+                <List className="w-3.5 h-3.5" />
+              </button>
+            </div>
           </div>
         </div>
 
-        {/* Legend for 6 Domains */}
-        <div className="flex flex-wrap items-center gap-4 text-[11px] text-slate-400 pt-1 pb-1 border-b border-slate-800">
-          <span>Domain Status Indicators:</span>
-          <span className="flex items-center gap-1.5">
-            <span className="w-2 h-2 rounded-full bg-rose-500"></span>
-            <span>Tier 3 (High Deficit)</span>
-          </span>
-          <span className="flex items-center gap-1.5">
-            <span className="w-2 h-2 rounded-full bg-amber-500"></span>
-            <span>Tier 2 (Moderate)</span>
-          </span>
-          <span className="flex items-center gap-1.5">
-            <span className="w-2 h-2 rounded-full bg-emerald-500"></span>
-            <span>Tier 1 (Low Deficit)</span>
-          </span>
-        </div>
+        {/* Card View (Friendly for Non-Tech Users) */}
+        {viewMode === 'cards' && (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3.5">
+            {filteredAndSortedDistricts.map(d => {
+              const score = d.compound_vulnerability.score;
+              const isUrgent = score >= 4;
+              const isMod = score >= 2;
+              const isIso = score === 1;
 
-        {/* High-Density Table */}
-        <div className="overflow-x-auto">
-          <table className="w-full text-left text-xs text-slate-300">
-            <thead className="bg-slate-950 text-slate-400 font-medium text-[11px] border-b border-slate-800">
-              <tr>
-                <th className="py-2.5 px-3">District</th>
-                <th className="py-2.5 px-3">Typology (Engine A)</th>
-                <th className="py-2.5 px-3 text-center">Deficit Domains</th>
-                <th className="py-2.5 px-3">Domain Profiles (M • I • N • FP • NCD • H)</th>
-                <th className="py-2.5 px-3">Priority Focus</th>
-                <th className="py-2.5 px-3 text-right">Details</th>
-              </tr>
-            </thead>
-            <tbody className="divide-y divide-slate-800/60">
-              {filteredAndSortedDistricts.map(d => {
-                const score = d.compound_vulnerability.score;
-                return (
-                  <tr 
-                    key={d.id}
-                    onClick={() => onSelectDistrict(d)}
-                    className="hover:bg-slate-850 cursor-pointer transition-colors group"
-                  >
-                    <td className="py-3 px-3 font-semibold text-white group-hover:text-blue-400 transition-colors">
-                      {d.name}
-                    </td>
-                    <td className="py-3 px-3">
-                      <span className={`text-[10px] font-medium px-2 py-0.5 rounded border ${clusterBadges[d.cluster_a.id].color}`}>
-                        {metadata.clusters_a[d.cluster_a.id].short_name}
-                      </span>
-                    </td>
-                    <td className="py-3 px-3 text-center tabular-nums">
-                      <span className={`inline-block font-semibold ${
-                        score >= 4 ? 'text-rose-400 font-bold' :
-                        score >= 2 ? 'text-amber-400' :
-                        score === 1 ? 'text-sky-400' : 'text-emerald-400'
+              return (
+                <div
+                  key={d.id}
+                  onClick={() => onSelectDistrict(d)}
+                  className="bg-slate-900 border border-slate-800 hover:border-blue-500/60 hover:bg-slate-850/80 rounded-2xl p-4.5 space-y-3 cursor-pointer transition-all shadow-md group flex flex-col justify-between"
+                >
+                  <div className="space-y-2">
+                    <div className="flex items-start justify-between gap-2">
+                      <h3 className="text-base font-bold text-white group-hover:text-blue-400 transition-colors truncate">
+                        {d.name}
+                      </h3>
+                      <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full shrink-0 ${
+                        isUrgent ? 'bg-rose-950 text-rose-300 border border-rose-800/60' :
+                        isMod ? 'bg-amber-950 text-amber-300 border border-amber-800/60' :
+                        isIso ? 'bg-sky-950 text-sky-300 border border-sky-800/60' :
+                        'bg-emerald-950 text-emerald-300 border border-emerald-800/60'
                       }`}>
-                        {score} / 6
+                        {isUrgent ? 'Urgent Need' : isMod ? 'Moderate Gaps' : isIso ? 'Focused Need' : 'Strong Health'}
                       </span>
-                    </td>
-                    <td className="py-3 px-3">
-                      <div className="flex items-center gap-2">
-                        <span title="Maternal">{getDomainTierBadge(d.domain_tiers.maternal_newborn)}</span>
-                        <span title="Immunisation">{getDomainTierBadge(d.domain_tiers.child_immunisation)}</span>
-                        <span title="Nutrition">{getDomainTierBadge(d.domain_tiers.nutrition_anaemia)}</span>
-                        <span title="Family Planning">{getDomainTierBadge(d.domain_tiers.family_planning)}</span>
-                        <span title="NCDs">{getDomainTierBadge(d.domain_tiers.ncd_screening)}</span>
-                        <span title="Amenities">{getDomainTierBadge(d.domain_tiers.household_amenities)}</span>
-                      </div>
-                    </td>
-                    <td className="py-3 px-3 text-slate-300 font-medium">
-                      {d.recommendations.primary_priority}
-                    </td>
-                    <td className="py-3 px-3 text-right">
-                      <span className="inline-flex items-center gap-0.5 text-xs text-blue-400 group-hover:text-blue-300 font-medium">
-                        View <ChevronRight className="w-3.5 h-3.5" />
-                      </span>
-                    </td>
-                  </tr>
-                );
-              })}
-            </tbody>
-          </table>
-        </div>
+                    </div>
+
+                    <div className="text-xs text-slate-300">
+                      Primary Focus: <strong className="text-slate-200">{d.recommendations.primary_priority}</strong>
+                    </div>
+                  </div>
+
+                  <div className="pt-3 border-t border-slate-800/80 flex items-center justify-between text-xs">
+                    <span className="text-slate-400">
+                      Gaps: <strong className={isUrgent ? 'text-rose-400' : 'text-slate-200'}>{score} of 6 areas</strong>
+                    </span>
+
+                    <span className="text-blue-400 font-semibold group-hover:translate-x-0.5 transition-transform inline-flex items-center gap-1 text-[11px]">
+                      <span>View Profile</span>
+                      <ChevronRight className="w-3.5 h-3.5" />
+                    </span>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        )}
+
+        {/* Table View */}
+        {viewMode === 'table' && (
+          <div className="overflow-x-auto rounded-2xl border border-slate-800 bg-slate-900 shadow-md">
+            <table className="w-full text-left text-xs text-slate-300">
+              <thead className="bg-slate-950 text-slate-400 font-semibold text-[11px] border-b border-slate-800">
+                <tr>
+                  <th className="py-3 px-3.5">District</th>
+                  <th className="py-3 px-3.5">Healthcare Status</th>
+                  <th className="py-3 px-3.5 text-center">Deficit Areas</th>
+                  <th className="py-3 px-3.5">Primary Priority</th>
+                  <th className="py-3 px-3.5 text-right">Action</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-slate-800/60">
+                {filteredAndSortedDistricts.map(d => {
+                  const score = d.compound_vulnerability.score;
+                  return (
+                    <tr 
+                      key={d.id}
+                      onClick={() => onSelectDistrict(d)}
+                      className="hover:bg-slate-850 cursor-pointer transition-colors group"
+                    >
+                      <td className="py-3 px-3.5 font-bold text-white group-hover:text-blue-400 transition-colors">
+                        {d.name}
+                      </td>
+                      <td className="py-3 px-3.5">
+                        <span className={`text-[10px] font-semibold px-2 py-0.5 rounded-full ${
+                          score >= 4 ? 'bg-rose-950 text-rose-300 border border-rose-800/60' :
+                          score >= 2 ? 'bg-amber-950 text-amber-300 border border-amber-800/60' :
+                          score === 1 ? 'bg-sky-950 text-sky-300 border border-sky-800/60' :
+                          'bg-emerald-950 text-emerald-300 border border-emerald-800/60'
+                        }`}>
+                          {score >= 4 ? 'Urgent Need' : score >= 2 ? 'Moderate' : score === 1 ? 'Focused' : 'Good'}
+                        </span>
+                      </td>
+                      <td className="py-3 px-3.5 text-center font-bold">
+                        <span className={score >= 4 ? 'text-rose-400' : 'text-slate-300'}>
+                          {score} / 6
+                        </span>
+                      </td>
+                      <td className="py-3 px-3.5 text-slate-200 font-medium">
+                        {d.recommendations.primary_priority}
+                      </td>
+                      <td className="py-3 px-3.5 text-right">
+                        <span className="text-blue-400 group-hover:text-blue-300 font-semibold inline-flex items-center gap-0.5">
+                          Open <ChevronRight className="w-3.5 h-3.5" />
+                        </span>
+                      </td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </div>
+        )}
       </section>
 
     </div>

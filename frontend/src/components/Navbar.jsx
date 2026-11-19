@@ -7,7 +7,8 @@ import {
   AlertTriangle, 
   BookOpen, 
   Search,
-  ChevronRight
+  ChevronRight,
+  Map
 } from 'lucide-react';
 
 export default function Navbar({ activePage, setActivePage, onSelectDistrict, districts }) {
@@ -15,12 +16,12 @@ export default function Navbar({ activePage, setActivePage, onSelectDistrict, di
   const [isSearchOpen, setIsSearchOpen] = useState(false);
 
   const navItems = [
-    { id: 'overview', label: 'Overview', icon: Activity },
-    { id: 'state', label: 'State Analysis', icon: MapPin },
-    { id: 'category', label: 'Category Analysis', icon: Layers },
+    { id: 'overview', label: 'India Map', icon: Map },
+    { id: 'state', label: 'State Overview', icon: MapPin },
     { id: 'district', label: 'District Profile', icon: FileText },
-    { id: 'vulnerabilities', label: 'Overlapping Deficits', icon: AlertTriangle },
-    { id: 'methodology', label: 'Model & Methods', icon: BookOpen },
+    { id: 'category', label: 'Health Sectors', icon: Layers },
+    { id: 'vulnerabilities', label: 'Priority Belts', icon: AlertTriangle },
+    { id: 'methodology', label: 'Data & Methodology', icon: BookOpen },
   ];
 
   const filteredDistricts = searchQuery.trim().length > 1 
