@@ -8,7 +8,8 @@ import {
   BookOpen, 
   Search,
   ChevronRight,
-  Map
+  Map,
+  Mail
 } from 'lucide-react';
 
 export default function Navbar({ activePage, setActivePage, onSelectDistrict, districts }) {
@@ -21,7 +22,7 @@ export default function Navbar({ activePage, setActivePage, onSelectDistrict, di
     { id: 'district', label: 'District Profile', icon: FileText },
     { id: 'category', label: 'Health Sectors', icon: Layers },
     { id: 'vulnerabilities', label: 'Priority Belts', icon: AlertTriangle },
-    { id: 'methodology', label: 'Data & Methodology', icon: BookOpen },
+    { id: 'contact', label: 'Contact Us', icon: Mail },
   ];
 
   const filteredDistricts = searchQuery.trim().length > 1 

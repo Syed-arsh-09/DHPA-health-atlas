@@ -90,12 +90,6 @@ export default function IndiaMap({
     setCurrentLevel('state');
     setCustomZoom(1);
     onSelectState(stateObj.name);
-
-    // If districts exist, select the first district or preserve existing if already in that state
-    const dList = districtsData.filter(d => d.state === stateObj.name);
-    if (dList.length > 0 && (!selectedDistrict || selectedDistrict.state !== stateObj.name)) {
-      onSelectDistrict(dList[0]);
-    }
   };
 
   // Handle clicking a district
@@ -178,7 +172,7 @@ export default function IndiaMap({
 
           <h2 className="text-base sm:text-lg font-bold text-white tracking-tight mt-1 flex items-center gap-2">
             {currentLevel === 'country' 
-              ? 'Click any State to Zoom & Explore Districts' 
+              ? 'Click any State to View State Overview' 
               : `${activeStateName} — Click Any District to View Health Profile`}
           </h2>
         </div>
@@ -343,7 +337,7 @@ export default function IndiaMap({
                   </div>
                 )}
                 <div className="text-blue-400 text-[10px] font-medium pt-1">
-                  👆 Click to zoom into districts
+                  👆 Click to view State Overview & Districts
                 </div>
               </div>
             ) : (

@@ -30,14 +30,6 @@ export default function StateAnalysis({
   const stateData = metadata.states.find(s => s.state === selectedState) || metadata.states[0];
   const stateDistricts = districts.filter(d => d.state === selectedState);
 
-  // Friendly cluster labels
-  const clusterBadges = {
-    1: { label: 'Advanced Facilities & Lifestyle Risk', color: 'text-sky-400 bg-sky-950/60 border-sky-800/80' },
-    2: { label: 'Progressing & Child Nutrition Gap', color: 'text-emerald-400 bg-emerald-950/60 border-emerald-800/80' },
-    3: { label: 'Foundational Healthcare Needs', color: 'text-rose-400 bg-rose-950/60 border-rose-800/80' },
-    4: { label: 'Hill & Mountain Geography', color: 'text-amber-400 bg-amber-950/60 border-amber-800/80' },
-  };
-
   // Filter & sort districts
   const filteredAndSortedDistricts = stateDistricts
     .filter(d => d.name.toLowerCase().includes(districtSearch.toLowerCase()))
@@ -51,26 +43,23 @@ export default function StateAnalysis({
       return sortAsc ? comp : -comp;
     });
 
-  // Health summary for this state
+  // Short health summary for this state
   const stateAssessment = (() => {
     const avg = stateData.avg_compound_score || 0;
     if (avg >= 3.0) {
       return {
-        pill: '🔴 High Priority State Support Needed',
-        color: 'rose',
-        text: `Several districts in ${selectedState} face overlapping challenges across maternal checkups, child anaemia, and sanitation. Focused resources under the National Health Mission are active.`
+        pill: '🔴 High Priority State',
+        text: `Several districts in ${selectedState} have multiple healthcare needs across maternal and child nutrition programs.`
       };
     } else if (avg >= 1.5) {
       return {
-        pill: '🟡 Progressing • Targeted Health Support',
-        color: 'amber',
-        text: `${selectedState} maintains solid primary delivery and immunization, but community outreach is required to curb child anaemia and support rural clinics.`
+        pill: '🟡 Progressing Healthcare',
+        text: `${selectedState} shows solid primary clinic coverage; community outreach will strengthen child nutrition.`
       };
     } else {
       return {
-        pill: '🟢 Strong Healthcare Infrastructure',
-        color: 'emerald',
-        text: `${selectedState} exhibits high hospital delivery rates, good immunisation, and strong living amenities. Management of lifestyle conditions is the primary area of focus.`
+        pill: '🟢 Strong Health Foundation',
+        text: `${selectedState} maintains high hospital delivery rates and strong immunisation coverage.`
       };
     }
   })();
@@ -79,44 +68,46 @@ export default function StateAnalysis({
     <div className="space-y-6 pb-20">
       
       {/* State Header Card */}
-      <section className="bg-slate-900 border border-slate-800 rounded-2xl p-6 sm:p-8 space-y-6 shadow-xl">
-        <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
-          <div className="space-y-2 max-w-2xl">
+      <section className="bg-slate-900 border border-slate-800 rounded-2xl p-5 sm:p-7 space-y-4 shadow-xl">
+        <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-5">
+          <div className="space-y-1.5 max-w-xl">
             <div className="flex items-center gap-2">
               <span className="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-slate-950 text-slate-300 border border-slate-800">
                 {stateAssessment.pill}
               </span>
               <span className="text-xs text-slate-400">
-                {stateDistricts.length} Administrative Districts
+                {stateDistricts.length} Districts
               </span>
             </div>
 
-            <h1 className="text-2xl sm:text-4xl font-black text-white tracking-tight">
+            <h1 className="text-2xl sm:text-3xl font-black text-white tracking-tight">
               {selectedState}
             </h1>
 
-            <p className="text-sm text-slate-300 leading-relaxed">
+            <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
               {stateAssessment.text}
             </p>
           </div>
 
           {/* Quick Metrics */}
-          <div className="grid grid-cols-3 gap-3 bg-slate-950 p-4 rounded-2xl border border-slate-800 shrink-0">
-            <div className="text-center px-2">
+          <div className="flex items-center gap-4 bg-slate-950 p-3.5 rounded-xl border border-slate-800 shrink-0">
+            <div className="text-center px-3">
               <span className="text-[11px] text-slate-400 block font-medium">Districts</span>
-              <span className="text-xl sm:text-2xl font-extrabold text-white mt-0.5 block">
+              <span className="text-xl font-bold text-white mt-0.5 block">
                 {stateDistricts.length}
               </span>
             </div>
-            <div className="text-center px-2 border-l border-slate-800">
-              <span className="text-[11px] text-slate-400 block font-medium">Average Gaps</span>
-              <span className="text-xl sm:text-2xl font-extrabold text-white mt-0.5 block">
+            <div className="h-8 w-px bg-slate-800" />
+            <div className="text-center px-3">
+              <span className="text-[11px] text-slate-400 block font-medium">Avg Deficits</span>
+              <span className="text-xl font-bold text-white mt-0.5 block">
                 {stateData.avg_compound_score} <span className="text-xs text-slate-500 font-normal">/ 6</span>
               </span>
             </div>
-            <div className="text-center px-2 border-l border-slate-800">
-              <span className="text-[11px] text-slate-400 block font-medium">Urgent Areas</span>
-              <span className={`text-xl sm:text-2xl font-extrabold mt-0.5 block ${
+            <div className="h-8 w-px bg-slate-800" />
+            <div className="text-center px-3">
+              <span className="text-[11px] text-slate-400 block font-medium">Urgent Focus</span>
+              <span className={`text-xl font-bold mt-0.5 block ${
                 stateData.mission_mode_count > 0 ? 'text-rose-400' : 'text-emerald-400'
               }`}>
                 {stateData.mission_mode_count}
@@ -128,14 +119,14 @@ export default function StateAnalysis({
         {/* State Map Toggle Button */}
         <div className="pt-2 flex items-center justify-between border-t border-slate-800/80">
           <span className="text-xs text-slate-400">
-            Interactive map shows all district boundaries for {selectedState}:
+            Map of district boundaries in {selectedState}:
           </span>
           <button
             onClick={() => setShowMap(!showMap)}
-            className="px-3.5 py-1.5 text-xs font-semibold rounded-xl bg-slate-800 hover:bg-slate-750 text-slate-200 border border-slate-700 transition-colors flex items-center gap-1.5"
+            className="px-3 py-1.5 text-xs font-semibold rounded-lg bg-slate-800 hover:bg-slate-750 text-slate-200 border border-slate-700 transition-colors flex items-center gap-1.5"
           >
             <MapIcon className="w-3.5 h-3.5 text-blue-400" />
-            <span>{showMap ? 'Hide State Map' : '🗺️ View State Map'}</span>
+            <span>{showMap ? 'Hide Map' : 'Show Map'}</span>
           </button>
         </div>
       </section>
@@ -161,7 +152,7 @@ export default function StateAnalysis({
               Districts in {selectedState} ({stateDistricts.length})
             </h2>
             <p className="text-xs text-slate-400">
-              Click any district card to view its full health profile
+              Click any district to view its health report card
             </p>
           </div>
 
@@ -171,10 +162,10 @@ export default function StateAnalysis({
               <Search className="w-3.5 h-3.5 text-slate-400 absolute left-2.5 top-1/2 -translate-y-1/2 pointer-events-none" />
               <input
                 type="text"
-                placeholder="Search district..."
+                placeholder="Find district..."
                 value={districtSearch}
                 onChange={(e) => setDistrictSearch(e.target.value)}
-                className="bg-slate-950 border border-slate-800 rounded-xl pl-8 pr-3 py-1.5 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-blue-500 w-36 sm:w-48"
+                className="bg-slate-950 border border-slate-800 rounded-xl pl-8 pr-3 py-1.5 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-blue-500 w-36 sm:w-44"
               />
             </div>
 
@@ -191,7 +182,7 @@ export default function StateAnalysis({
               className="px-3 py-1.5 text-xs font-semibold rounded-xl bg-slate-950 hover:bg-slate-800 text-slate-300 border border-slate-800 transition-colors flex items-center gap-1.5"
             >
               <ArrowUpDown className="w-3.5 h-3.5 text-blue-400" />
-              <span>Sort: {sortField === 'compound' ? (sortAsc ? 'Lowest Deficit' : 'Highest Need') : 'Name'}</span>
+              <span>{sortField === 'compound' ? (sortAsc ? 'Least Need' : 'Highest Need') : 'Name'}</span>
             </button>
 
             {/* View Mode Toggle */}
@@ -218,9 +209,9 @@ export default function StateAnalysis({
           </div>
         </div>
 
-        {/* Card View (Friendly for Non-Tech Users) */}
+        {/* Card View (Decluttered, Uncrowded, Breathable) */}
         {viewMode === 'cards' && (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3.5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
             {filteredAndSortedDistricts.map(d => {
               const score = d.compound_vulnerability.score;
               const isUrgent = score >= 4;
@@ -231,37 +222,29 @@ export default function StateAnalysis({
                 <div
                   key={d.id}
                   onClick={() => onSelectDistrict(d)}
-                  className="bg-slate-900 border border-slate-800 hover:border-blue-500/60 hover:bg-slate-850/80 rounded-2xl p-4.5 space-y-3 cursor-pointer transition-all shadow-md group flex flex-col justify-between"
+                  className="bg-slate-900 border border-slate-800 hover:border-blue-500/60 hover:bg-slate-850/80 rounded-xl p-4 cursor-pointer transition-all shadow-sm group flex flex-col justify-between space-y-2.5"
                 >
-                  <div className="space-y-2">
-                    <div className="flex items-start justify-between gap-2">
-                      <h3 className="text-base font-bold text-white group-hover:text-blue-400 transition-colors truncate">
-                        {d.name}
-                      </h3>
-                      <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full shrink-0 ${
-                        isUrgent ? 'bg-rose-950 text-rose-300 border border-rose-800/60' :
-                        isMod ? 'bg-amber-950 text-amber-300 border border-amber-800/60' :
-                        isIso ? 'bg-sky-950 text-sky-300 border border-sky-800/60' :
-                        'bg-emerald-950 text-emerald-300 border border-emerald-800/60'
-                      }`}>
-                        {isUrgent ? 'Urgent Need' : isMod ? 'Moderate Gaps' : isIso ? 'Focused Need' : 'Strong Health'}
-                      </span>
-                    </div>
-
-                    <div className="text-xs text-slate-300">
-                      Primary Focus: <strong className="text-slate-200">{d.recommendations.primary_priority}</strong>
-                    </div>
+                  <div className="flex items-center justify-between gap-2">
+                    <h3 className="text-sm font-bold text-white group-hover:text-blue-400 transition-colors truncate">
+                      {d.name}
+                    </h3>
+                    <span className={`text-[10px] font-semibold px-2 py-0.5 rounded-full shrink-0 ${
+                      isUrgent ? 'bg-rose-950 text-rose-300 border border-rose-800/60' :
+                      isMod ? 'bg-amber-950 text-amber-300 border border-amber-800/60' :
+                      isIso ? 'bg-sky-950 text-sky-300 border border-sky-800/60' :
+                      'bg-emerald-950 text-emerald-300 border border-emerald-800/60'
+                    }`}>
+                      {isUrgent ? 'Urgent Need' : isMod ? 'Moderate' : isIso ? 'Focused' : 'Good'}
+                    </span>
                   </div>
 
-                  <div className="pt-3 border-t border-slate-800/80 flex items-center justify-between text-xs">
-                    <span className="text-slate-400">
-                      Gaps: <strong className={isUrgent ? 'text-rose-400' : 'text-slate-200'}>{score} of 6 areas</strong>
-                    </span>
+                  <div className="text-[11px] text-slate-400 truncate">
+                    Focus: <span className="text-slate-200 font-medium">{d.recommendations.primary_priority}</span>
+                  </div>
 
-                    <span className="text-blue-400 font-semibold group-hover:translate-x-0.5 transition-transform inline-flex items-center gap-1 text-[11px]">
-                      <span>View Profile</span>
-                      <ChevronRight className="w-3.5 h-3.5" />
-                    </span>
+                  <div className="pt-2 border-t border-slate-800/70 flex items-center justify-end text-blue-400 font-semibold group-hover:translate-x-0.5 transition-transform text-[11px] gap-0.5">
+                    <span>View Report</span>
+                    <ChevronRight className="w-3.5 h-3.5" />
                   </div>
                 </div>
               );
@@ -271,15 +254,14 @@ export default function StateAnalysis({
 
         {/* Table View */}
         {viewMode === 'table' && (
-          <div className="overflow-x-auto rounded-2xl border border-slate-800 bg-slate-900 shadow-md">
+          <div className="overflow-x-auto rounded-xl border border-slate-800 bg-slate-900 shadow-sm">
             <table className="w-full text-left text-xs text-slate-300">
               <thead className="bg-slate-950 text-slate-400 font-semibold text-[11px] border-b border-slate-800">
                 <tr>
-                  <th className="py-3 px-3.5">District</th>
-                  <th className="py-3 px-3.5">Healthcare Status</th>
-                  <th className="py-3 px-3.5 text-center">Deficit Areas</th>
-                  <th className="py-3 px-3.5">Primary Priority</th>
-                  <th className="py-3 px-3.5 text-right">Action</th>
+                  <th className="py-2.5 px-3.5">District</th>
+                  <th className="py-2.5 px-3.5">Healthcare Status</th>
+                  <th className="py-2.5 px-3.5">Primary Priority</th>
+                  <th className="py-2.5 px-3.5 text-right">Action</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-slate-800/60">
@@ -291,10 +273,10 @@ export default function StateAnalysis({
                       onClick={() => onSelectDistrict(d)}
                       className="hover:bg-slate-850 cursor-pointer transition-colors group"
                     >
-                      <td className="py-3 px-3.5 font-bold text-white group-hover:text-blue-400 transition-colors">
+                      <td className="py-2.5 px-3.5 font-bold text-white group-hover:text-blue-400 transition-colors">
                         {d.name}
                       </td>
-                      <td className="py-3 px-3.5">
+                      <td className="py-2.5 px-3.5">
                         <span className={`text-[10px] font-semibold px-2 py-0.5 rounded-full ${
                           score >= 4 ? 'bg-rose-950 text-rose-300 border border-rose-800/60' :
                           score >= 2 ? 'bg-amber-950 text-amber-300 border border-amber-800/60' :
@@ -304,15 +286,10 @@ export default function StateAnalysis({
                           {score >= 4 ? 'Urgent Need' : score >= 2 ? 'Moderate' : score === 1 ? 'Focused' : 'Good'}
                         </span>
                       </td>
-                      <td className="py-3 px-3.5 text-center font-bold">
-                        <span className={score >= 4 ? 'text-rose-400' : 'text-slate-300'}>
-                          {score} / 6
-                        </span>
-                      </td>
-                      <td className="py-3 px-3.5 text-slate-200 font-medium">
+                      <td className="py-2.5 px-3.5 text-slate-200 font-medium">
                         {d.recommendations.primary_priority}
                       </td>
-                      <td className="py-3 px-3.5 text-right">
+                      <td className="py-2.5 px-3.5 text-right">
                         <span className="text-blue-400 group-hover:text-blue-300 font-semibold inline-flex items-center gap-0.5">
                           Open <ChevronRight className="w-3.5 h-3.5" />
                         </span>

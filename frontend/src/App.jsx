@@ -6,7 +6,7 @@ import StateAnalysis from './views/StateAnalysis';
 import CategoryAnalysis from './views/CategoryAnalysis';
 import DistrictProfile from './views/DistrictProfile';
 import OverlappingVulnerabilities from './views/OverlappingVulnerabilities';
-import Methodology from './views/Methodology';
+import ContactUs from './views/ContactUs';
 
 import districtsData from './data/districts.json';
 import metadataData from './data/metadata.json';
@@ -88,10 +88,8 @@ export default function App() {
           />
         )}
 
-        {activePage === 'methodology' && (
-          <Methodology 
-            metadata={metadataData}
-          />
+        {activePage === 'contact' && (
+          <ContactUs />
         )}
       </main>
 
